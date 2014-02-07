@@ -39,17 +39,9 @@ Thumbs.db
 # merge tool backups
 *.orig
 
-# build output
-deploy/
-
-# module development shells
-index-dev-*.html
-
 # vim temp files
 *.swp
 
 # nodejs
 node_modules
 .grunt/
-_SpecRunner.html
-report/junit.xml
