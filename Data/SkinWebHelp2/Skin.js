@@ -8,6 +8,6 @@ CMCXmlParser._FilePathToXmlStringMap.Add(
 	'    <Stylesheet Link=\"Stylesheet.xml\">' +
 	'    </Stylesheet>' +
 	'    <Toolbar EnableCustomLayout=\"true\" Buttons=\"SelectTOC|SelectIndex|SelectSearch|AddTopicToFavorites|Separator|Back|Forward|ExpandAll|CollapseAll|Print|RemoveHighlight\" />' +
-	'    <WebHelpOptions NavigationPanePosition=\"Left\" VisibleAccordionItemCount=\"3\" />' +
+	'    <WebHelpOptions NavigationPanePosition=\"Left\" VisibleAccordionItemCount=\"4\" />' +
 	'</CatapultSkin>'
 );

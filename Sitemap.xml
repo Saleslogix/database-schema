@@ -7,7 +7,25 @@
         <loc>http://saleslogix.github.io/database/Content/image/adminonly.gif</loc>
     </url>
     <url>
+        <loc>http://saleslogix.github.io/database/Content/image/AscendingB.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/image/BookO.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/image/BookOpenO.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/image/BrowsesequencesAccordionBackground_overO.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/image/BrowsesequencesIconO.png</loc>
+    </url>
+    <url>
         <loc>http://saleslogix.github.io/database/Content/image/caution.gif</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/image/DescendingB.png</loc>
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Content/image/DropDownClosed.gif</loc>
@@ -22,6 +40,9 @@
         <loc>http://saleslogix.github.io/database/Content/image/ExpandOpen.gif</loc>
     </url>
     <url>
+        <loc>http://saleslogix.github.io/database/Content/image/FavoritesIconO.png</loc>
+    </url>
+    <url>
         <loc>http://saleslogix.github.io/database/Content/image/note.gif</loc>
     </url>
     <url>
@@ -29,6 +50,15 @@
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Content/image/remotes.gif</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/image/SelectTocO.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/image/SelectToc_overO.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/image/SelectToc_selectedO.png</loc>
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Content/Resources/Stylesheets/SALESLOGIX.CSS</loc>
@@ -901,7 +931,7 @@
         <loc>http://saleslogix.github.io/database/Skin/Blank.htm</loc>
     </url>
     <url>
-        <loc>http://saleslogix.github.io/database/Index.htm</loc>
+        <loc>http://saleslogix.github.io/database/index.htm</loc>
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Skin/Toolbar.htm</loc>
@@ -931,9 +961,9 @@
         <loc>http://saleslogix.github.io/database/Skin/TopicComments.htm</loc>
     </url>
     <url>
-        <loc>http://saleslogix.github.io/database/Index.mcwebhelp</loc>
+        <loc>http://saleslogix.github.io/database/index.mcwebhelp</loc>
     </url>
     <url>
-        <loc>http://saleslogix.github.io/database/Index.htm</loc>
+        <loc>http://saleslogix.github.io/database/index.htm</loc>
     </url>
 </urlset>

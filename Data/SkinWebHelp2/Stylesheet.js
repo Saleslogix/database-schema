@@ -55,6 +55,14 @@ CMCXmlParser._FilePathToXmlStringMap.Add(
 	'                        <Property Name=\"OnClick\">ExpandAll( \"open\" );PrintTopic();ExpandAll( \"close\" )</Property>' +
 	'                    </Properties>' +
 	'                </StyleClass>' +
+	'                <StyleClass Name=\"SelectTOC\">' +
+	'                    <Properties>' +
+	'                        <Property Name=\"ControlType\">SelectTOC</Property>' +
+	'                        <Property Name=\"Icon\">url(\'SelectTocO.png\')</Property>' +
+	'                        <Property Name=\"HoverIcon\">url(\'SelectToc_overO.png\')</Property>' +
+	'                        <Property Name=\"PressedIcon\">url(\'SelectToc_selectedO.png\')</Property>' +
+	'                    </Properties>' +
+	'                </StyleClass>' +
 	'                <StyleClass Name=\"AccordionTitle\">' +
 	'                    <Properties>' +
 	'                        <Property Name=\"ControlType\">AccordionTitle</Property>' +
@@ -115,14 +123,6 @@ CMCXmlParser._FilePathToXmlStringMap.Add(
 	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/Refresh.gif\')</Property>' +
 	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/Refresh_over.gif\')</Property>' +
 	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/Refresh_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"SelectTOC\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">SelectTOC</Property>' +
-	'                        <Property Name=\"Icon\">url(\'SelectToc.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'SelectToc_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'SelectToc_selected.gif\')</Property>' +
 	'                    </Properties>' +
 	'                </StyleClass>' +
 	'                <StyleClass Name=\"SelectIndex\">' +
@@ -225,84 +225,96 @@ CMCXmlParser._FilePathToXmlStringMap.Add(
 	'                <StyleClass Name=\"TOC\">' +
 	'                    <Properties>' +
 	'                        <Property Name=\"Label\">Table of Contents</Property>' +
-	'                        <Property Name=\"Icon\">url(\'TocIcon.gif\')</Property>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'TocAccordionBackground.jpg\')</Property>' +
-	'                        <Property Name=\"BackgroundImageHover\">url(\'TocAccordionBackground_over.jpg\')</Property>' +
-	'                        <Property Name=\"Color\">#000000</Property>' +
+	'                        <Property Name=\"Icon\">url(\'BookO.png\')</Property>' +
+	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
+	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
 	'                        <Property Name=\"ItemHeight\">28px</Property>' +
+	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
 	'                    </Properties>' +
 	'                </StyleClass>' +
 	'                <StyleClass Name=\"Search\">' +
 	'                    <Properties>' +
 	'                        <Property Name=\"Label\">Search</Property>' +
 	'                        <Property Name=\"Icon\">url(\'find.gif\')</Property>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'SearchAccordionBackground.jpg\')</Property>' +
-	'                        <Property Name=\"BackgroundImageHover\">url(\'SearchAccordionBackground_over.jpg\')</Property>' +
+	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
+	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
 	'                        <Property Name=\"ItemHeight\">28px</Property>' +
+	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
+	'                    </Properties>' +
+	'                </StyleClass>' +
+	'                <StyleClass Name=\"BrowseSequence\">' +
+	'                    <Properties>' +
+	'                        <Property Name=\"Label\">Browse Sequences</Property>' +
+	'                        <Property Name=\"Icon\">url(\'BrowsesequencesIconO.png\')</Property>' +
+	'                        <Property Name=\"Color\">#00678a</Property>' +
+	'                        <Property Name=\"BackgroundGradient\">default</Property>' +
+	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
+	'                        <Property Name=\"ItemHeight\">28px</Property>' +
+	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
+	'                    </Properties>' +
+	'                </StyleClass>' +
+	'                <StyleClass Name=\"Favorites\">' +
+	'                    <Properties>' +
+	'                        <Property Name=\"Label\">Favorites</Property>' +
+	'                        <Property Name=\"Icon\">url(\'FavoritesIconO.png\')</Property>' +
+	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
+	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
+	'                        <Property Name=\"ItemHeight\">28px</Property>' +
+	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
 	'                    </Properties>' +
 	'                </StyleClass>' +
 	'                <StyleClass Name=\"IconTray\">' +
 	'                    <Properties>' +
 	'                        <Property Name=\"ItemHeight\">28px</Property>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'AccordionIconsBackground.jpg\')</Property>' +
+	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
+	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
+	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
 	'                    </Properties>' +
 	'                </StyleClass>' +
 	'                <StyleClass Name=\"Index\">' +
 	'                    <Properties>' +
 	'                        <Property Name=\"Label\">Index</Property>' +
 	'                        <Property Name=\"Icon\">url(\'IndexIcon.gif\')</Property>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'IndexAccordionBackground.jpg\')</Property>' +
-	'                        <Property Name=\"BackgroundImageHover\">url(\'IndexAccordionBackground_over.jpg\')</Property>' +
+	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
+	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
 	'                        <Property Name=\"ItemHeight\">28px</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Favorites\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Favorites</Property>' +
-	'                        <Property Name=\"Icon\">url(\'FavoritesIcon.gif\')</Property>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'FavoritesAccordionBackground.jpg\')</Property>' +
-	'                        <Property Name=\"BackgroundImageHover\">url(\'FavoritesAccordionBackground_over.jpg\')</Property>' +
-	'                        <Property Name=\"ItemHeight\">28px</Property>' +
+	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
 	'                    </Properties>' +
 	'                </StyleClass>' +
 	'                <StyleClass Name=\"Glossary\">' +
 	'                    <Properties>' +
 	'                        <Property Name=\"Label\">Glossary</Property>' +
 	'                        <Property Name=\"Icon\">url(\'GlossaryIcon.gif\')</Property>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'GlossaryAccordionBackground.jpg\')</Property>' +
-	'                        <Property Name=\"BackgroundImageHover\">url(\'GlossaryAccordionBackground_over.jpg\')</Property>' +
+	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
+	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
 	'                        <Property Name=\"ItemHeight\">28px</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"BrowseSequence\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Browse Sequences</Property>' +
-	'                        <Property Name=\"Icon\">url(\'BrowsesequencesIcon.gif\')</Property>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'BrowsesequencesAccordionBackground.jpg\')</Property>' +
-	'                        <Property Name=\"BackgroundImageHover\">url(\'BrowsesequencesAccordionBackground_over.jpg\')</Property>' +
-	'                        <Property Name=\"ItemHeight\">28px</Property>' +
+	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
 	'                    </Properties>' +
 	'                </StyleClass>' +
 	'                <StyleClass Name=\"Community\">' +
 	'                    <Properties>' +
 	'                        <Property Name=\"Label\">Community</Property>' +
 	'                        <Property Name=\"Icon\">url(\'CommunityIcon.gif\')</Property>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'CommunityAccordionBackground.jpg\')</Property>' +
-	'                        <Property Name=\"BackgroundImageHover\">url(\'CommunityAccordionBackground_over.jpg\')</Property>' +
+	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
+	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
 	'                        <Property Name=\"ItemHeight\">28px</Property>' +
+	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
 	'                    </Properties>' +
 	'                </StyleClass>' +
 	'            </Classes>' +
 	'            <Properties>' +
+	'                <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
+	'                <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
 	'                <Property Name=\"ItemHeight\">28px</Property>' +
+	'                <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
 	'            </Properties>' +
 	'        </Style>' +
 	'        <Style Name=\"TocEntry\">' +
 	'            <Properties>' +
 	'                <Property Name=\"Color\">#000000</Property>' +
 	'                <Property Name=\"TopicIcon\">url(\'Topic.gif\')</Property>' +
-	'                <Property Name=\"BookIcon\">url(\'Book.gif\')</Property>' +
-	'                <Property Name=\"BookOpenIcon\">url(\'BookOpen.gif\')</Property>' +
+	'                <Property Name=\"BookIcon\">url(\'BookO.png\')</Property>' +
+	'                <Property Name=\"BookOpenIcon\">url(\'BookOpenO.png\')</Property>' +
 	'            </Properties>' +
 	'        </Style>' +
 	'        <Style Name=\"Control\">' +
@@ -672,9 +684,9 @@ CMCXmlParser._FilePathToXmlStringMap.Add(
 	'    <Resources>' +
 	'    </Resources>' +
 	'    <ResourcesInfo>' +
-	'        <Resource Name=\"SelectToc.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"SelectToc_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"SelectToc_selected.gif\" Width=\"23\" Height=\"22\" />' +
+	'        <Resource Name=\"SelectTocO.png\" Width=\"23\" Height=\"22\" />' +
+	'        <Resource Name=\"SelectToc_overO.png\" Width=\"23\" Height=\"22\" />' +
+	'        <Resource Name=\"SelectToc_selectedO.png\" Width=\"23\" Height=\"22\" />' +
 	'        <Resource Name=\"SelectIndex.gif\" Width=\"23\" Height=\"22\" />' +
 	'        <Resource Name=\"SelectIndex_over.gif\" Width=\"23\" Height=\"22\" />' +
 	'        <Resource Name=\"SelectIndex_selected.gif\" Width=\"23\" Height=\"22\" />' +
@@ -702,34 +714,18 @@ CMCXmlParser._FilePathToXmlStringMap.Add(
 	'        <Resource Name=\"Highlight.gif\" Width=\"23\" Height=\"22\" />' +
 	'        <Resource Name=\"Highlight_over.gif\" Width=\"23\" Height=\"22\" />' +
 	'        <Resource Name=\"Highlight_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"TocIcon.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"TocAccordionBackground.jpg\" Width=\"2\" Height=\"28\" />' +
-	'        <Resource Name=\"TocAccordionBackground_over.jpg\" Width=\"2\" Height=\"28\" />' +
+	'        <Resource Name=\"BookO.png\" Width=\"16\" Height=\"16\" />' +
 	'        <Resource Name=\"IndexIcon.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"IndexAccordionBackground.jpg\" Width=\"2\" Height=\"28\" />' +
-	'        <Resource Name=\"IndexAccordionBackground_over.jpg\" Width=\"2\" Height=\"28\" />' +
 	'        <Resource Name=\"find.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"SearchAccordionBackground.jpg\" Width=\"2\" Height=\"28\" />' +
-	'        <Resource Name=\"SearchAccordionBackground_over.jpg\" Width=\"2\" Height=\"28\" />' +
-	'        <Resource Name=\"FavoritesIcon.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"FavoritesAccordionBackground.jpg\" Width=\"2\" Height=\"28\" />' +
-	'        <Resource Name=\"FavoritesAccordionBackground_over.jpg\" Width=\"2\" Height=\"28\" />' +
-	'        <Resource Name=\"BrowsesequencesIcon.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"BrowsesequencesAccordionBackground.jpg\" Width=\"2\" Height=\"28\" />' +
-	'        <Resource Name=\"BrowsesequencesAccordionBackground_over.jpg\" Width=\"2\" Height=\"28\" />' +
+	'        <Resource Name=\"FavoritesIconO.png\" Width=\"16\" Height=\"16\" />' +
+	'        <Resource Name=\"BrowsesequencesIconO.png\" Width=\"16\" Height=\"16\" />' +
 	'        <Resource Name=\"GlossaryIcon.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"GlossaryAccordionBackground.jpg\" Width=\"2\" Height=\"28\" />' +
-	'        <Resource Name=\"GlossaryAccordionBackground_over.jpg\" Width=\"2\" Height=\"28\" />' +
 	'        <Resource Name=\"CommunityIcon.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"CommunityAccordionBackground.jpg\" Width=\"2\" Height=\"28\" />' +
-	'        <Resource Name=\"CommunityAccordionBackground_over.jpg\" Width=\"2\" Height=\"28\" />' +
-	'        <Resource Name=\"AccordionIconsBackground.jpg\" Width=\"2\" Height=\"28\" />' +
 	'        <Resource Name=\"header.png\" Width=\"1\" Height=\"42\" />' +
 	'        <Resource Name=\"IndexHeadingBG.png\" Width=\"1\" Height=\"23\" />' +
 	'        <Resource Name=\"SearchBG.png\" Width=\"1\" Height=\"43\" />' +
 	'        <Resource Name=\"Topic.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"Book.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"BookOpen.gif\" Width=\"16\" Height=\"16\" />' +
+	'        <Resource Name=\"BookOpenO.png\" Width=\"16\" Height=\"16\" />' +
 	'        <Resource Name=\"ToolbarBackground.jpg\" Width=\"2\" Height=\"28\" />' +
 	'        <Resource Name=\"NavigationTopGradient.jpg\" Width=\"2\" Height=\"8\" />' +
 	'        <Resource Name=\"NavigationBottomGradient.jpg\" Width=\"2\" Height=\"7\" />' +
