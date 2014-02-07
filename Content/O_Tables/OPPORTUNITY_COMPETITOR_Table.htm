@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="070811 lrw audited, added related table info, hid old" MadCap:id="OPPORTUNITY_COMPETITOR Table" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpStatus.Complete" MadCap:tocPath="Base Tables" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>OPPORTUNITY_COMPETITOR Table</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor135"></a>OPPORTUNITY_COMPETITOR Table</h1>
+        <p>The OPPORTUNITY_COMPETITOR table stores information about competitors that are associated with an opportunity. This table links the <span style="text-transform: uppercase;"><a href="OPPORTUNITY_Table.htm">Opportunity</a></span> table to the <span style="text-transform: uppercase;"><a href="../C_Tables/COMPETITOR_Table.htm">Competitor</a></span> table.</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="93.076%">
+            <col style="width: 8.595%;" />
+            <col style="width: 91.405%;" />
+            <tr>
+                <td style="width: 8.595%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../image/note.gif" style="border: none;" alt="" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 91.405%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p class="Bullets">If an index entry appears in multiple table columns, then it is a composite index. A composite index requires multiple columns in order to create a unique index.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Head1"><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="../Legend.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Legend</a></span>
+            <br />
+&#160;</p>
+        <table style="padding-left: 3.00pt;padding-top: 5.00pt;padding-right: 3.00pt;padding-bottom: 3.00pt;margin-left: 0;margin-right: auto;" cellspacing="0" width="832">
+            <col width="139" />
+            <col width="105" />
+            <col width="86" />
+            <col width="191" />
+            <col width="78" MadCap:conditions="Primary.753Relationships" />
+            <col width="140" MadCap:conditions="Primary.753Relationships" />
+            <tr style="height: 26pt;">
+                <td style="border: Solid 1px #000000;" width="138">
+                    <p class="Tabletop">Field</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Tabletop">Datatype(Length)</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Tabletop">Allow Nulls</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p class="Tabletop">Indexes</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p class="Tabletop">Relationship</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Tabletop">Related Table and Field</p>
+                </td>
+            </tr>
+            <tr style="height: 26pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">OPPORTUNITYID <span style="font-weight: bold;">(PK) (FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">STANDARDID (12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p class="Table">OPPORTUNITY_COMPETITOR_OPPID_COMPID_PK <span style="font-weight: bold;">(CA)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p class="Table"><span class="SLXBold">(Many) to (One)</span>
+                    </p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Table"><a href="OPPORTUNITY_Table.htm">OPPORTUNITY.OPPORTUNITYID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">COMPETITORID <span style="font-weight: bold;">(PK) (FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">STANDARDID (12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p class="Table">OPPORTUNITY_COMPETITOR_OPPID_COMPID_PK <span style="font-weight: bold;">(CA)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p class="Table"><span class="SLXBold">(Many) to (One)</span>
+                    </p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Table"><a href="../C_Tables/COMPETITOR_Table.htm">COMPETITOR.COMPETITOR</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">INCUMBENT</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">BOOLEAN(1)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">CREATEDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">CREATEUSER <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">STANDARDID(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p class="Table"><span class="SLXBold" style="font-weight: normal;">(Many) to (One)</span>
+                    </p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Table"><a href="../U_Tables/USERINFO_Table.htm">USERINFO.USERID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">STRENGTHS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">varchar(128)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">WEAKNESSES</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">varchar(128)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">NOTES</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">TEXTBLOB(16)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">WONLOSS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">BOOLEAN(1)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">REASON</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">varchar(64)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">STRATEGY</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">varchar(128)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">MODIFYDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">MODIFYUSER<span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105">
+                    <p class="Table">STANDARDID(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="78">
+                    <p class="Table"><span class="SLXBold" style="font-weight: normal;">(Many) to (One)</span>
+                    </p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Table"><a href="../U_Tables/USERINFO_Table.htm">USERINFO.USERID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="138">
+                    <p class="Table">RATING</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105">
+                    <p class="Table">int(4)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="78">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="140">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="138">
+                    <p class="Table">LOSTREPLACED</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105">
+                    <p class="Table">char(1)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="191">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="78">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="140">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Head1">&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

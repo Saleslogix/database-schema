@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Base Tables" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" />
+        <meta name="copyright" content="" /><title>SLXWEBGROUPITEM Table</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 class="Infinitive" value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor225"></a>SLXWEBGROUPITEM Table</h1>
+        <p value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation">The SLXWEBGROUPITEM and SLXWEBGROUP tables work together to store groups or collections of items for the Web Client. This table contains information including, but not limited to, the group item ID, group ID, and item name.</p>
+        <p value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation" class="subheading">table relationships</p>
+        <p value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation">The SLXWEBGROUPITEM table has a (Many) to (Zero or One) relationship with the <a href="SLXWEBGROUP_Table.htm">SLXWEBGROUP</a> table.</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="99.933%">
+            <col style="width: 8.006%;" />
+            <col style="width: 91.994%;" />
+            <tr>
+                <td style="width: 8.006%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../image/note.gif" style="border: none;" alt="" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 91.994%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p class="Tip-Note-Text">CreateUser and ModifyUser are foreign keys referencing UserID in the <a href="../U_Tables/USERINFO_Table.htm">USERINFO</a> table.</p>
+                </td>
+            </tr>
+        </table>
+        <p><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="../Legend.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Legend</a></span>
+            <br />
+&#160;</p>
+        <table style="padding-left: 3.00pt;padding-top: 5.00pt;padding-right: 3.00pt;padding-bottom: 3.00pt;vertical-align: Center;left: 0px;top: 120px;height: 219px;margin-left: 0;margin-right: auto;" cellspacing="0" width="543">
+            <col />
+            <col />
+            <col />
+            <col />
+            <tr style="vertical-align: center;height: 16pt;">
+                <td style="border: Solid 1px #000000;" width="169">
+                    <p class="Tabletop">Field</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Tabletop">Datatype(Length)</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="131">
+                    <p class="Tabletop">Allow Nulls</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Tabletop">Indexes</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: center;height: 16pt;">
+                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="169">
+                    <p class="Table">SLXWEBGROUPITEMID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="131">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Table">SLXWEBGROUPITEM_ID <span style="font-weight: bold;">(IE)</span></p>
+                </td>
+            </tr>
+            <tr style="vertical-align: center;height: 16pt;">
+                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="169">
+                    <p class="Table"><a href="SLXWEBGROUP_Table.htm">SLXGROUPID</a>
+                    </p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="131">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Table">SLXWEBGROUPITEM_SLXWEBGROUPID <span style="font-weight: bold;">(IE)</span></p>
+                </td>
+            </tr>
+            <tr style="vertical-align: center;height: 16pt;">
+                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="169">
+                    <p class="Table">CREATEUSER <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="131">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: center;height: 16pt;">
+                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="169">
+                    <p class="Table">CREATEDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="131">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: center;height: 16pt;">
+                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="169">
+                    <p class="Table">MODIFYUSER <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="131">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: center;height: 16pt;">
+                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="169">
+                    <p class="Table">MODIFYDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="131">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="vertical-align: center;height: 16pt;">
+                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="169">
+                    <p class="Table">ITEMNAME</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">varchar(64)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="131">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="140">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

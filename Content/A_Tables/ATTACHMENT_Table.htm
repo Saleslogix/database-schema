@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="6.1 jm: 042903 rev open para. 060811 lrw changed leadid to char from varchar, added salesorderid (audited too); 061311 lrw added relationship info" MadCap:id="ATTACHMENT Table" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpStatus.Complete" MadCap:tocPath="Base Tables" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>ATTACHMENT Table</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor34"></a>ATTACHMENT Table</h1>
+        <p>The <span style="text-transform: uppercase;">Attachment</span> table stores all identifying information about the letters, faxes, e-mail messages, URLs and other files that are attached to accounts, contacts, opportunities, tickets, defects, contracts, and procedures. The table stores information such as description, date attached, file size and name, and identifying data.</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="96.943%">
+            <col style="width: 8.252%;" />
+            <col style="width: 91.748%;" />
+            <tr>
+                <td style="width: 8.252%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../image/note.gif" style="border: none;" alt="" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 91.748%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p>If you applied the SLX Indexes for MS SQL.sql script to your database, your index information may be different than described in this topic. &#160;For more information, see the Index Changes.pdf document.</p>
+                </td>
+            </tr>
+        </table>
+        <p><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="../Legend.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Legend</a></span>
+            <br />&#160;</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/TableStyle.css');" class="TableStyle-TableStyle" cellspacing="0">
+            <col class="Column-Column1" />
+            <col width="104" class="Column-Column1" />
+            <col width="80" class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" MadCap:conditions="Primary.753Relationships" />
+            <col class="Column-Column1" MadCap:conditions="Primary.753Relationships" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Field</th>
+                    <th class="HeadE-Column1-Header1">Datatype (Length)</th>
+                    <th class="HeadE-Column1-Header1">Allow Nulls</th>
+                    <th class="HeadE-Column1-Header1">Indexes</th>
+                    <th class="HeadE-Column1-Header1">Relationship</th>
+                    <th class="HeadD-Column1-Header1">Related Table and Field</th>
+                </tr>
+            </thead>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">ATTACHID <span style="font-weight: bold;">(PK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p class="Table">ATTACHMENT_ATTACHID_PK <span style="font-weight: bold;">(CA)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><span class="SLXBold">(One) to (Many)</span>
+                        </p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table" MadCap:conditions="Primary.753Relationships"><a href="../R_Tables/REMOTEATTACHMENTS_Table.htm">REMOTEATTACHMENTS.ATTACHID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">ATTACHDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">datetime</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">ACCOUNTID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p class="Table">ATTACHMENT_ACCOUNTID <span style="font-weight: bold;">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table" MadCap:conditions="Primary.753Relationships"><a href="ACCOUNT_Table.htm">ACCOUNT.ACCOUNTID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">CONTACTID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p class="Table">ATTACHMENT_CONTACTID <span style="font-weight: bold;">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../C_Tables/COMMODITYGROUP_Table.htm">CONTACT.CONTACTID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">OPPORTUNITYID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p class="Table">ATTACHMENT_OPPORTUNITYID <span style="font-weight: bold;">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../O_Tables/OPPORTUNITY_Table.htm">OPPORTUNITY.OPPORTUNITYID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">DESCRIPTION</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">varchar(128)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">DATATYPE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">BOOLEAN</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">FILESIZE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">int</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">FILENAME</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">varchar(255)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">USERID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><span class="SLXBold">(Many) to (One)</span>
+                        </p>
+                        <p class="table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../U_Tables/USERSECURITY_Table.htm">USERSECURITY.USERID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">DATA</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">DATABLOB</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">CONTRACTID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table" MadCap:conditions="Primary.753Relationships"><a href="../C_Tables/CONTRACT_Table.htm">CONTRACT.CONTRACTID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">DEFECTID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../D_Tables/DEFECT_Table.htm">DEFECT.DEFECTID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">DOCUMENTTYPE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">varchar(80)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">PROCEDUREID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p class="Table">ATTACHMENT_PROCEDUREID <span style="font-weight: bold;">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                        <p class="table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../P_Tables/PROCEDURES_Table.htm">PROCEDURE.PROCEDUREID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">PRODUCTID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p class="Table">ATTACHMENT_PRODUCTID <span style="font-weight: bold;">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                        <p class="table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../P_Tables/PRODUCT_Table.htm">PRODUCT.PRODUCTID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">RMAID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p class="Table">ATTACHMENT_RMAID <span style="font-weight: bold;">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../R_Tables/RMA_Table.htm">RMA.RMAID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">TICKETID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p class="Table">ATTACHMENT_TICKETID <span style="font-weight: bold;">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../T_Tables/TICKET_Table.htm">TICKET.TICKETID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">HISTORYID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p class="Table">ATTACHMENT_HISTORYID <span style="font-weight: bold;">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../H_Tables/HISTORY_Table.htm">HISTORY.HISTORYID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">MODIFYDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">datetime</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p>&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">MODIFYUSER <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../U_Tables/USERINFO_Table.htm">USERINFO.USERID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">CREATEDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">datetime</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">CREATEUSER <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../U_Tables/USERINFO_Table.htm">USERINFO.USERID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">LEADID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="../L_Tables/LEAD_Table.htm">LEAD.LEADID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">ACTIVITYID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">varchar(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table"><a href="ACTIVITY_Table.htm">ACTIVITY.ACTIVITYID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">SALESORDERID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">(Many) to (One)</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table" MadCap:conditions="Primary.753Relationships"><a href="../S_Tables/SALESORDER_Table.htm">SALESORDER.SALESORDERID</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyE-Column1-Body1">
+                    <p class="Table">CREATESOURCE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="105" class="BodyE-Column1-Body1">
+                    <p class="Table">varchar(64)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="75" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="217" class="BodyE-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="99" class="BodyE-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="142" class="BodyD-Column1-Body1">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table" MadCap:conditions="Primary.753Relationships">&#160;</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

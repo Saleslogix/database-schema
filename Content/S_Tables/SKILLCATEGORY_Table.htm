@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:id="SKILLCATEGORY Table" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Deprecated Tables" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>SKILLCATEGORY Table</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor285"></a>SKILLCATEGORY Table</h1>
+        <p class="Tabletop">Deprecated in version 7.0</p>
+        <p>The SKILLCATEGORY table stores information for a user's skills and experience level. For users of Support features, category and experience level items can be set in the Administrator (user profile &gt; Support tab).</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="94%">
+            <col style="width: 8.511%;" />
+            <col style="width: 91.489%;" />
+            <tr>
+                <td style="width: 8.511%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../image/note.gif" style="border: none;" alt="" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 91.489%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <ul>
+                        <li class="p-Bullets" value="1">
+                            <p class="Bullets">CategoryID and ExperienceCode are created using Pick List Manager.</p>
+                        </li>
+                        <li class="p-Bullets" value="2">
+                            <p class="Bullets">CreateUser and ModifyUser are foreign keys referencing UserID in the <a href="../U_Tables/USERINFO_Table.htm">USERINFO</a> table.</p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="../Legend.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Legend</a></span>
+            <br />
+&#160;</p>
+        <table style="padding-left: 3.00pt;padding-top: 5.00pt;padding-right: 3.00pt;padding-bottom: 3.00pt;margin-left: 0;margin-right: auto;" cellspacing="0" width="527">
+            <col />
+            <col />
+            <col width="86" />
+            <col width="164" />
+            <tr style="height: 16pt;">
+                <td style="border: Solid 1px #000000;" width="165">
+                    <p class="Tabletop">Field</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Tabletop">Datatype(Length)</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Tabletop">Allow Nulls</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="163">
+                    <p class="Tabletop">Indexes</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="165">
+                    <p class="Table">SKILLCATEGORYID <span style="font-weight: bold;">(PK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">STANDARDID(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="163">
+                    <p class="Table">PK_SKILLCATEGORY <span style="font-weight: bold;">(CA)</span></p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="165">
+                    <p class="Table">USERID <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">STANDARDID(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="163">
+                    <p class="Table">XIE1SKILLCATEGORY <span style="font-weight: bold;">(IE)</span></p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="165">
+                    <p class="Table">CATEGORYID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">STANDARDID(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="163">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="165">
+                    <p class="Table">EXPERIENCECODE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">STANDARDID(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="163">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="165">
+                    <p class="Table">CREATEUSER <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">STANDARDID(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="163">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="165">
+                    <p class="Table">CREATEDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="163">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="165">
+                    <p class="Table">MODIFYUSER <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="103">
+                    <p class="Table">STANDARDID(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="163">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="165">
+                    <p class="Table">MODIFYDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="103">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="86">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="163">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

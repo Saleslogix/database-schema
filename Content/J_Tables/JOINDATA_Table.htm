@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:id="JOINDATA Table" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpStatus.Ready for Review" MadCap:tocPath="Base Tables" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>JOINDATA Table</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor101"></a>JOINDATA Table</h1>
+        <p class="Head1">The <span style="text-transform: uppercase;">JoinData</span> table stores global join definitions. When you join tables, a link is created between two tables using a field that exists in both tables. Global joins are accessed using the Global Join Manager in the Administrator, Architect, and Query Builder.</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="93.076%">
+            <col style="width: 8.595%;" />
+            <col style="width: 91.405%;" />
+            <tr>
+                <td style="width: 8.595%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../image/note.gif" style="border: none;" alt="" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 91.405%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <ul>
+                        <li class="p-Bullets" value="1">
+                            <p class="Bullets">CreateUser and ModifyUser are foreign keys referencing UserID in the <a href="../U_Tables/USERINFO_Table.htm">USERINFO</a> table.</p>
+                        </li>
+                        <li class="p-Bullets" value="2">
+                            <p class="Bullets">If an index entry appears in multiple table columns, then it is a composite index. A composite index requires multiple columns in order to create a unique index.</p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="../Legend.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Legend</a></span>
+            <br />
+&#160;</p>
+        <table style="padding-left: 3.00pt;padding-top: 5.00pt;padding-right: 3.00pt;padding-bottom: 3.00pt;margin-left: 0;margin-right: auto;" cellspacing="0" width="529">
+            <tr style="height: 16pt;">
+                <td style="border: Solid 1px #000000;" width="144">
+                    <p class="Tabletop">Field</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Tabletop">Datatype(Length)</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Tabletop">Allow Nulls</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Tabletop">Indexes</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="144">
+                    <p class="Table">JOINID <span style="font-weight: bold;">(PK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">STANDARDID(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p>JOINDATA_JOINID_PK <span style="font-weight: bold;">(AK)</span></p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="144">
+                    <p class="Table">FROMTABLE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">varchar(32)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">JOINDATA_COMPOSITE <span style="font-weight: bold;">(CA)</span></p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="144">
+                    <p class="Table">FROMFIELD</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">varchar(32)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">JOINDATA_COMPOSITE <span style="font-weight: bold;">(CA)</span></p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="144">
+                    <p class="Table">TOTABLE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">varchar(32)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="144">
+                    <p class="Table">TOFIELD</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">varchar(32)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="144">
+                    <p class="Table">SECONDARY</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">BOOLEAN(1)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="144">
+                    <p class="Table">KEYGENERATOR</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">int(4)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="144">
+                    <p class="Table">CASCADETYPE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">BOOLEAN(1)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="144">
+                    <p class="Table">USEBYDEFAULT</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">BOOLEAN(1)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="128">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="144">
+                    <p class="Table">JOINTYPE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p class="Table">BOOLEAN(1)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="144">
+                    <p class="Table">MODIFYDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="144">
+                    <p class="Table">MODIFYUSER <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="144">
+                    <p class="Table">CREATEDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="144">
+                    <p class="Table">CREATUSER <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="128">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

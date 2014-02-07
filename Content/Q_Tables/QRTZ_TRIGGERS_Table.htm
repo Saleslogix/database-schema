@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:id="QUOTA Table" MadCap:comment="12/6/12 new" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpStatus.In Progress" MadCap:tocPath="Base Tables" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>QRTZ_TRIGGERS Table</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor173"></a>QRTZ_TRIGGERS Table</h1>
+        <p><span class="SLXBold">Added in Version 8.0</span>
+        </p>
+        <p>The QRTZ_TRIGGERS table contains information used by the Job Service. 
+ &#160;</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="99.933%">
+            <col style="width: 5.565%;" />
+            <col style="width: 94.435%;" />
+            <tr>
+                <td style="width: 5.565%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../image/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 94.435%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p class="Bullets">If an index entry appears in multiple table 
+		 columns, then it is a composite index. A composite index requires 
+		 multiple columns in order to create a unique index.</p>
+                </td>
+            </tr>
+        </table>
+        <p><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="../Legend.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Legend</a></span>
+            <br />
+&#160;</p>
+        <table style="padding-left: 3.00pt;padding-top: 5.00pt;padding-right: 3.00pt;padding-bottom: 3.00pt;margin-left: 0;margin-right: auto;" cellspacing="0" width="529">
+            <col width="119" />
+            <col width="139" />
+            <col width="95" />
+            <col />
+            <tr style="height: 37px;">
+                <td style="border: Solid 1px #000000;" width="119">
+                    <p class="Tabletop">Field</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Tabletop">Datatype(Length)</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="95">
+                    <p class="Tabletop">Allow 
+		 Nulls</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="166">
+                    <p class="Tabletop">Indexes</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Tabletop">Relationship</p>
+                    </div>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Tabletop">Related Table and Field</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td rowspan="10" style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">SCHED_NAME <span class="SLXBold">(PK)</span></p>
+                </td>
+                <td rowspan="10" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">varchar(100)</p>
+                </td>
+                <td rowspan="10" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td rowspan="10" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">PK_QRTZ_TRIGGERS 
+		 <span class="SLXBold">(AK)</span></p>
+                    <p class="Table">IDX_QRTZ_T_C <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_G <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_J <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_JG <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_N_G_STATE 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_N_STATE 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_NEXT_FIRE_TIME 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table">IDX_QRTZ_T_NFT_MISFIRE <span class="SLXBold">(IE)</span></p>
+                    <p class="Table">IDX_QRTZ_T_NFT_ST <span class="SLXBold">(IE)</span></p>
+                    <p class="Table">IDX_QRTZ_T_NFT_ST_MISFIRE <span class="SLXBold">(IE)</span></p>
+                    <p class="Table">IDX_QRTZ_T_NFT_ST_MISFIRE_GRP <span class="SLXBold">(IE)</span></p>
+                    <p class="Table">IDX_QRTZ_T_STATE <span class="SLXBold">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table" MadCap:conditions="Primary.753Relationships,Primary.Comments">Per PZ: not going to guess what might be related 
+		 or FK for quartz</p>
+                        <p class="Table" MadCap:conditions="Primary.753Relationships,Primary.Comments"><a href="QRTZ_BLOB_TRIGGERS_Table.htm">QRTZ_BLOB_TRIGGERS.SCHED_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_CALENDARS_Table.htm">QRTZ_CALENDARS.SCHED_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_CRON_TRIGGERS_Table.htm">QRTZ_CRON_TRIGGERS.SCHED_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_FIRED_TRIGGERS_Table.htm">QRTZ_FIRED_TRIGGERS.SCHED_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 19px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_JOB_DETAILS_Table.htm">QRTZ_JOB_DETAILS.SCHED_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_LOCKS_Table.htm">QRTZ_LOCKS.SCHED_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_PAUSED_TRIGGER_GRPS_Table.htm">QRTZ_PAUSED_TRIGGER_GRPS.SCHED_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_SCHEDULER_STATE_Table.htm">QRTZ_SCHEDULER_STATE.SCHED_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_SIMPLE_TRIGGERS_Table.htm">QRTZ_SIMPLE_TRIGGERS.SCHED_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_SIMPROP_TRIGGERS_Table.htm">QRTZ_SIMPROP_TRIGGERS.SCHED_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td rowspan="5" style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">TRIGGER_NAME <span class="SLXBold">(PK)</span></p>
+                </td>
+                <td rowspan="5" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">varchar(150)</p>
+                </td>
+                <td rowspan="5" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td rowspan="5" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">PK_QRTZ_TRIGGERS 
+		 <span class="SLXBold">(AK)</span></p>
+                    <p class="Table">IDX_QRTZ_T_N_STATE <span class="SLXBold">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_BLOB_TRIGGERS_Table.htm">QRTZ_BLOB_TRIGGERS.TRIGGER_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_CRON_TRIGGERS_Table.htm">QRTZ_CRON_TRIGGERS.TRIGGER_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_FIRED_TRIGGERS_Table.htm">QRTZ_FIRED_TRIGGERS.TRIGGER_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_SIMPLE_TRIGGERS_Table.htm">QRTZ_SIMPLE_TRIGGERS.TRIGGER_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_SIMPROP_TRIGGERS_Table.htm">QRTZ_SIMPROP_TRIGGERS.TRIGGER_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td rowspan="6" style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">TRIGGER_GROUP <span class="SLXBold">(PK)</span></p>
+                </td>
+                <td rowspan="6" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">varchar(150)</p>
+                </td>
+                <td rowspan="6" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td rowspan="6" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table" style="font-weight: normal;">PK_QRTZ_TRIGGERS 
+		 <span class="SLXBold">(AK)</span></p>
+                    <p class="Table">IDX_QRTZ_T_G <span class="SLXBold">(IE)</span></p>
+                    <p class="Table">IDX_QRTZ_T_N_G_STATE <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_N_STATE 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_NFT_ST_MISFIRE_GRP 
+		 <span class="SLXBold">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_BLOB_TRIGGERS_Table.htm">QRTZ_BLOB_TRIGGERS.TRIGGER_GROUP</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_CRON_TRIGGERS_Table.htm">QRTZ_CRON_TRIGGERS.TRIGGER_GROUP</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_FIRED_TRIGGERS_Table.htm">QRTZ_FIRED_TRIGGERS.TRIGGER_GROUP</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_PAUSED_TRIGGER_GRPS_Table.htm">QRTZ_PAUSED_TRIGGER_GRPS.TRIGGER_GROUP</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_SIMPLE_TRIGGERS_Table.htm">QRTZ_SIMPLE_TRIGGERS.TRIGGER_GROUP</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_SIMPROP_TRIGGERS_Table.htm">QRTZ_SIMPROP_TRIGGERS.TRIGGER_GROUP</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td rowspan="2" style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">JOB_NAME</p>
+                </td>
+                <td rowspan="2" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">varchar(150)</p>
+                </td>
+                <td rowspan="2" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td rowspan="2" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">IDX_QRTZ_T_J 
+		 <span class="SLXBold">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_FIRED_TRIGGERS_Table.htm">QRTZ_FIRED_TRIGGERS.JOB_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_JOB_DETAILS_Table.htm">QRTZ_JOB_DETAILS.JOB_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 28px;">
+                <td rowspan="2" style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">JOB_GROUP</p>
+                </td>
+                <td rowspan="2" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">varchar(150)</p>
+                </td>
+                <td rowspan="2" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NOT NULL</p>
+                    <p class="table">&#160;</p>
+                </td>
+                <td rowspan="2" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">IDX_QRTZ_T_J 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_JG <span class="SLXBold" style="font-weight: normal;">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_FIRED_TRIGGERS_Table.htm">QRTZ_FIRED_TRIGGERS.JOB_GROUP</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 28px;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_JOB_DETAILS_Table.htm">QRTZ_JOB_DETAILS.JOB_GROUP</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">DESCRIPTION</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">varcharR(250)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_JOB_DETAILS_Table.htm">QRTZ_JOB_DETAILS.DESCRIPTION</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 106px;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">NEXT_FIRE_TIME</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">IDX_QRTZ_T_NEXT_FIRE_TIME 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_NFT_MISFIRE 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_NFT_ST 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_NFT_ST_MISFIRE 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_NFT_ST_MISFIRE_GRP 
+		 <span class="SLXBold">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships">&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">PREVIOUS_FIRE_TIME</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships">&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">PRIORITY</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">int(4)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_FIRED_TRIGGERS_Table.htm">QRTZ_FIRED_TRIGGERS.PRIORITY</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 106px;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">TRIGGER_STATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">varchar(16)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">IDX_QRTZ_T_N_G_STATE 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_N_STATE 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_NFT_ST 
+		 <span class="SLXBold">(IE)</span>IDX_QRTZ_T_NFT_ST_MISFIRE <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_NFT_ST_MISFIRE_GRP 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table" style="font-weight: normal;">IDX_QRTZ_T_STATE 
+		 <span class="SLXBold">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_FIRED_TRIGGERS_Table.htm">QRTZ_FIRED_TRIGGERS.STATE</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 36px;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">TRIGGER_TYPE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">varchar(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships">&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 36px;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">START_TIME</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships">&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">END_TIME</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships">&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">CALENDAR_NAME</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">varchar(200)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">IDX_QRTZ_T_C 
+		 <span class="SLXBold">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships"><a href="QRTZ_CALENDARS_Table.htm">QRTZ_CALENDARS.CALENDAR_NAME</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 78px;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="119">
+                    <p class="Table">MISFIRE_INSTR</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="138">
+                    <p class="Table">int(4)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="95">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;" width="166">
+                    <p class="Table">IDX_QRTZ_T_NFT_MISFIRE 
+		 <span class="SLXBold">(IE)</span></p>
+                    <p class="Table">IDX_QRTZ_T_NFT_ST_MISFIRE <span class="SLXBold">(IE)</span></p>
+                    <p class="Table">IDX_QRTZ_T_NFT_ST_MISFIRE_GRP <span class="SLXBold">(IE)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships">&#160;</p>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="119">
+                    <p class="Table">JOB_DATA</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="138">
+                    <p class="Table">image(16)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="95">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="166">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships">
+                        <p class="Table">&#160;</p>
+                    </div>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <div MadCap:conditions="Primary.753Relationships,Primary.Comments">
+                        <p class="Table" MadCap:conditions="Primary.Comments,Primary.753Relationships">&#160;</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

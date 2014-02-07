@@ -1,0 +1,9 @@
+CMCXmlParser._FilePathToXmlStringMap.Add(
+	'Skin',
+	'<?xml version=\"1.0\" encoding=\"utf-8\"?>' +
+	'<CatapultSkin Version=\"1\" Title=\"Saleslogix Database Help\" AutoSyncTOC=\"true\" Tabs=\"TOC,Index,Search,Favorites\" Top=\"25px\" Left=\"710px\" Width=\"314px\" Height=\"650px\" DefaultTab=\"TOC\">' +
+	'    <HtmlHelpOptions ShowMenuBar=\"false\" TopmostWindowStyle=\"false\" AutoShowNavigationPane=\"false\" EnableButtonCaptions=\"false\" AdvancedSearch=\"false\" NavigationPaneWidth=\"0\" Buttons=\"Hide,Back,Forward,Print\" HideNavigationOnStartup=\"false\" />' +
+	'    <Toc LinesBetweenItems=\"false\" LinesFromRoot=\"false\" SingleClick=\"true\" PlusMinusSquares=\"false\" AlwaysShowSelection=\"false\" UseFolderIcons=\"false\" ImageListWidth=\"16\" />' +
+	'    <Stylesheet Link=\"Stylesheet.xml\" />' +
+	'</CatapultSkin>'
+);

@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="071511 lrw audited, added related table info, hid old" MadCap:id="SECCODE Table" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:fileTags="RoboHelpStatus.Complete" MadCap:tocPath="Base Tables" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>SECCODE Table</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor199"></a>SECCODE Table</h1>
+        <p>The <span style="text-transform: uppercase;">SecCode</span> table stores security information for Saleslogix users. As shown in Table 2, the database contains 3 default records. Then, as you add users and teams, a record is created. Teams can be based on region, territory, type of account, or department.</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;left: 0px;top: 84px;height: 59px;" cellspacing="0" width="632">
+            <col style="width: 6.171%;" />
+            <col style="width: 93.829%;" />
+            <tr>
+                <td style="width: 6.171%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../image/note.gif" style="border: none;" alt="" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 93.829%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p>If you applied the SLX Indexes for MS SQL.sql script to your database, your index information may be different than described in this topic. &#160;For more information, see the Index Changes.pdf document.</p>
+                </td>
+            </tr>
+        </table>
+        <p><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="../Legend.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Legend</a></span>
+            <br />
+&#160;</p>
+        <table style="padding-left: 3.00pt;padding-top: 5.00pt;padding-right: 3.00pt;padding-bottom: 3.00pt;margin-left: 0;margin-right: auto;" cellspacing="0">
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <tr style="vertical-align: center;height: 21px;">
+                <td style="border: Solid 1px #000000;" width="165">
+                    <p class="Tabletop">Field</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="100">
+                    <p class="Tabletop">Datatype(Length)</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="72">
+                    <p class="Tabletop">Allow Nulls</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="195">
+                    <p class="Tabletop">Indexes</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="148">
+                    <p class="Tabletop">Values</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="148">
+                    <p class="Tabletop">Relationship</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="235">
+                    <p class="Tabletop">Related Table and Field</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td rowspan="39" style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;">
+                    <p class="Table">SECCODEID <span style="font-weight: bold;">(PK)</span></p>
+                </td>
+                <td rowspan="39" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;">
+                    <p class="Table">STANDARDID(12)</p>
+                </td>
+                <td rowspan="39" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td rowspan="39" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;">
+                    <p class="Table">SECCODE_SECCODEID <span style="font-weight: bold;">(AK)</span></p>
+                </td>
+                <td rowspan="39" style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;vertical-align: top;">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../A_Tables/ACCOUNT_Table.htm">ACCOUNT.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../A_Tables/ACCOUNT_Table.htm">ACCOUNT.DEFAULTTICKETSECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../A_Tables/ACCOUNTSUMMARY_Table.htm">ACCOUNTSUMMARY.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../C_Tables/CALCULATEDFIELDDATA_Table.htm">CALCULATEDFIELDDATA.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../C_Tables/Campaign_Table.htm">CAMPAIGN.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><span class="SLXBold" style="font-weight: normal;"><a href="../C_Tables/CAMPAIGNTARGET_Table.htm">CAMPAIGNTARGETSVIEW.SECCODEID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../C_Tables/CONTACT_Table.htm">CONTACT.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../C_Tables/CONTRACT_Table.htm">CONTRACT.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../D_Tables/DEDUPRESULT_Table.htm">DEDUPRESULT.RESOLVEDBY</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../D_Tables/DEFECT_Table.htm">DEFECT.ASSIGNEDTOID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../D_Tables/DEFECT_Table.htm">DEFECT.RECORDEDBYID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../D_Tables/DEFECT_Table.htm">DEFECT.CLOSEDBYID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../D_Tables/DEFECT_Table.htm">DEFECT.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><span class="SLXBold" style="font-weight: normal;"><a href="../Views/Understanding_SalesLogix_Views.htm">DEPARTMENTVIEW.SECCODEID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../E_Tables/ERPSALESORDER_Table.htm">ERPSALESORDER.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../E_Tables/ERPTRADINGACCOUNT_Table.htm">ERPTRADINGACCOUNT.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../H_Tables/HIST_LEAD.htm">HIST_LEAD.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../I_Tables/IMPORTHISTORY_Table.htm">IMPORTHISTORY.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../I_Tables/IMPORTTEMPLATE_Table.htm">IMPORTTEMPLATE.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../L_Tables/LEAD_Table.htm">LEAD.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../H_Tables/HIST_LEAD.htm">HIST_LEAD.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../O_Tables/OPPORTUNITY_Table.htm">OPPORTUNITY.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold"><a href="../Views/Understanding_SalesLogix_Views.htm" style="font-weight: normal;">OWNERVIEW.SECCODEID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold" style="font-weight: normal;"><a href="../R_Tables/RMA_Table.htm">RMA.ASSIGNEDTOID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../R_Tables/RMA_Table.htm">RMA.CLOSEDBYID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold" style="font-weight: normal;"><a href="../R_Tables/RMA_Table.htm">RMA.SECCODEID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold" style="font-weight: normal;"><a href="../R_Tables/RMA_Table.htm">RMA.SUBMITTEDBYID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="SALESORDER_Table.htm">SALESORDER.SECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="SEC_FUNCTIONOWNER_Table.htm">SEC_FUNCTIONOWNER.OWNERID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="SECCODEJOINS_Table.htm">SECCODEJOINS.CHILDSECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="SECCODEJOINS_Table.htm">SECCODEJOINS.PARENTSECCODEID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table" style="font-weight: bold;">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold" style="font-weight: normal;"><a href="SECRIGHTS_Table.htm">SECRIGHTS.SECCODEID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold" style="font-weight: normal;"><a href="../Views/Understanding_SalesLogix_Views.htm">TEAMVIEW.SECCODEID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold" style="font-weight: normal;"><a href="../T_Tables/TICKET_Table.htm">TICKET.ASSIGNEDTOID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold" style="font-weight: normal;"><a href="../T_Tables/TICKET_Table.htm">TICKET.COMPLETEDBYID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold" style="font-weight: normal;"><a href="../T_Tables/TICKET_Table.htm">TICKET.RECEIVEDBYID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold" style="font-weight: normal;"><a href="../T_Tables/TICKET_Table.htm">TICKET.SECCODEID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table">(One) to (Many)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold" style="font-weight: normal;"><a href="../T_Tables/TICKETAREAOWNER_Table.htm">TICKETAREAOWNER.SECCODEID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="table" style="font-weight: bold;">(One) to (Many)* <span style="font-weight: normal;">limited to 1:1 by application</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table" style="font-weight: normal;"><span class="SLXBold" style="font-weight: normal;"><a href="../U_Tables/USERSECURITY_Table.htm">USERSECURITY.DEFAULTSECCODEID</a></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">SECCODEDESC</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">varchar(64)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">SECCODE_SECCODEDESC <span style="font-weight: bold;">(CA)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">SECCODETYPE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">BOOLEAN(1)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">U=Users and Templates, G=Team, D=Department, S=System</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p>&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">MODIFYDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">MODIFYUSER <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">(Many) to (One)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../U_Tables/USERINFO_Table.htm">USERINFO.USERID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">CREATEDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">datetime(8)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">CREATEUSER <span style="font-weight: bold;">(FK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">char(12)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table">(Many) to (One)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                    <p class="Table"><a href="../U_Tables/USERINFO_Table.htm">USERINFO.USERID</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <p>Table 2</p>
+        <table style="padding-left: 3.00pt;padding-top: 5.00pt;padding-right: 3.00pt;padding-bottom: 3.00pt;margin-left: 0;margin-right: auto;" cellspacing="0" width="530">
+            <col width="181" />
+            <col width="206" />
+            <col />
+            <tr style="height: 16pt;">
+                <td style="border: Solid 1px #000000;" width="181">
+                    <p class="Tabletop">SECCODEID</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="205">
+                    <p class="Tabletop">SECCODEDESC</p>
+                </td>
+                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="124">
+                    <p class="Tabletop">SECCODETYPE</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="181">
+                    <p class="Table">SYST00000001</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="205">
+                    <p class="Table">Everyone</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="124">
+                    <p class="Table">S</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="181">
+                    <p class="Table">SYST00000002</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="205">
+                    <p class="Table">Everyone (View Only)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="124">
+                    <p class="Table">S</p>
+                </td>
+            </tr>
+            <tr style="height: 16pt;">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="181">
+                    <p class="Table">N6UJ9A000000</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="205">
+                    <p class="Table">IS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: solid 1px #000000;" width="124">
+                    <p class="Table">D</p>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Base Tables" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="copyright" content="" /><title>CONTACTUSER</title>
+        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor50"></a>CONTACTUSER 
+ Table</h1>
+        <p class="Infinitive">Added in Version 8.1</p>
+        <p>The <span style="text-transform: uppercase;">CONTACTUSER</span> table 
+ associates a contact to a Saleslogix user. This table was added for multiple 
+ attendees per activity functionality. </p>
+        <p>&#160;</p>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="97%">
+            <col style="width: 8.248%;" />
+            <col style="width: 91.752%;" />
+            <tr>
+                <td style="width: 8.248%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <p style="text-align: center;margin-bottom: 0;">
+                        <img src="../image/note.gif" alt="" style="border: none;" width="24" height="24" border="0" />
+                    </p>
+                </td>
+                <td style="width: 91.752%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">
+                    <ul>
+                        <li class="p-Bullets" value="1">
+                            <p class="Bullets">While this table does 
+			 not have a field defined as a primary key, the CONTACTUSERID 
+			 field should be unique and considered a primary key.</p>
+                        </li>
+                        <li class="p-Bullets" value="2">
+                            <p class="Bullets">CreateUser and ModifyUser 
+			 are foreign keys referencing UserID in the <a href="../U_Tables/USERINFO_Table.htm">USERINFO</a> 
+			 table.</p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="../Legend.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Legend</a></span>
+        </p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/TableStyle.css');" class="TableStyle-TableStyle" cellspacing="0">
+            <col class="Column-Column1" />
+            <col width="104" class="Column-Column1" />
+            <col width="80" class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Field</th>
+                    <th class="HeadE-Column1-Header1">Datatype (Length)</th>
+                    <th class="HeadE-Column1-Header1">Allow Nulls</th>
+                    <th class="HeadE-Column1-Header1">Indexes</th>
+                    <th class="HeadE-Column1-Header1">Relationship</th>
+                    <th class="HeadD-Column1-Header1">Related Table and Field</th>
+                </tr>
+            </thead>
+            <tr style="height: 37px;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">CONTACTUSERID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">CONTACTUSER_PRIMARY <span class="SLXBold">(AK)</span></p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 37px;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table"><a href="CONTACT_Table.htm">CONTACTID</a> 
+		 (FK)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">(Many) to (One)</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
+                    <p class="Table"><a href="CONTACT_Table.htm">CONTACT.CONTACTID</a>
+                    </p>
+                </td>
+            </tr>
+            <tr style="height: 22px;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">CREATEUSER</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 22px;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">CREATEDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">datetime</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 22px;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">MODIFYUSER 
+		 </p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 22px;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">MODIFYDATE</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">datetime</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">NULLS</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+            </tr>
+            <tr style="height: 19px;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table"><a href="../U_Tables/USERSECURITY_Table.htm">USERID</a>
+                    </p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">STANDARDID</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
+                    <p class="Table">NOT NULL</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table">&#160;</p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="197" class="BodyE-Column1-Body1">
+                    <p class="Table"><span class="SLXBold">(Many) 
+		 to (One)</span>
+                    </p>
+                </td>
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
+                    <p class="Table"><a href="../U_Tables/USERSECURITY_Table.htm">USERSECURITY_USERID</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>
