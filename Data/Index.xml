@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CatapultTargetIndex Count="314">
+<CatapultTargetIndex Count="313">
     <IndexEntry>
         <Entries>
             <IndexEntry Term="2014">
                 <Entries />
                 <Links>
-                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_sage_software.htm#kanchor7" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_saleslogix.htm#kanchor7" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -287,7 +287,7 @@
             <IndexEntry Term="CAMPAIGNCONTACT Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="CAMPAIGNCONTACT Table" Link="/Content/C_Tables/CAMPAIGNCONTACT_Table.htm#kanchor283" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="CAMPAIGNCONTACT Table" Link="/Content/C_Tables/CAMPAIGNCONTACT_Table.htm#kanchor282" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -368,7 +368,7 @@
             <IndexEntry Term="CONCURRENTUSER Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="CONCURRENTUSER Table" Link="/Content/C_Tables/CONCURRENTUSER_Table.htm#kanchor284" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="CONCURRENTUSER Table" Link="/Content/C_Tables/CONCURRENTUSER_Table.htm#kanchor283" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -404,7 +404,7 @@
             <IndexEntry Term="Contacting Sage Software">
                 <Entries />
                 <Links>
-                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_sage_software.htm#kanchor5" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_saleslogix.htm#kanchor5" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -631,7 +631,7 @@
                     <IndexEntry Term="CampaignContact">
                         <Entries />
                         <Links>
-                            <IndexLink Title="CAMPAIGNCONTACT Table" Link="/Content/C_Tables/CAMPAIGNCONTACT_Table.htm#kanchor283" UsedConditions="" LocalConditions="" />
+                            <IndexLink Title="CAMPAIGNCONTACT Table" Link="/Content/C_Tables/CAMPAIGNCONTACT_Table.htm#kanchor282" UsedConditions="" LocalConditions="" />
                         </Links>
                         <SeeAlsoLinks />
                         <IndexControlLinks />
@@ -640,7 +640,7 @@
                     <IndexEntry Term="ConcurrentUser">
                         <Entries />
                         <Links>
-                            <IndexLink Title="CONCURRENTUSER Table" Link="/Content/C_Tables/CONCURRENTUSER_Table.htm#kanchor284" UsedConditions="" LocalConditions="" />
+                            <IndexLink Title="CONCURRENTUSER Table" Link="/Content/C_Tables/CONCURRENTUSER_Table.htm#kanchor283" UsedConditions="" LocalConditions="" />
                         </Links>
                         <SeeAlsoLinks />
                         <IndexControlLinks />
@@ -658,7 +658,7 @@
                     <IndexEntry Term="EmailProfile">
                         <Entries />
                         <Links>
-                            <IndexLink Title="EMAILPROFILE Table" Link="/Content/E_Tables/EMAILPROFILE_Table.htm#kanchor285" UsedConditions="" LocalConditions="" />
+                            <IndexLink Title="EMAILPROFILE Table" Link="/Content/E_Tables/EMAILPROFILE_Table.htm#kanchor284" UsedConditions="" LocalConditions="" />
                         </Links>
                         <SeeAlsoLinks />
                         <IndexControlLinks />
@@ -676,7 +676,7 @@
                     <IndexEntry Term="SalesOrderDetail">
                         <Entries />
                         <Links>
-                            <IndexLink Title="SALESORDERDETAIL Table" Link="/Content/S_Tables/SALESORDERDETAIL_Table.htm#kanchor286" UsedConditions="" LocalConditions="" />
+                            <IndexLink Title="SALESORDERDETAIL Table" Link="/Content/S_Tables/SALESORDERDETAIL_Table.htm#kanchor285" UsedConditions="" LocalConditions="" />
                         </Links>
                         <SeeAlsoLinks />
                         <IndexControlLinks />
@@ -685,7 +685,7 @@
                     <IndexEntry Term="SecRightsCache">
                         <Entries />
                         <Links>
-                            <IndexLink Title="SECRIGHTSCACHE Table" Link="/Content/S_Tables/SECRIGHTSCACHE_Table.htm#kanchor287" UsedConditions="" LocalConditions="" />
+                            <IndexLink Title="SECRIGHTSCACHE Table" Link="/Content/S_Tables/SECRIGHTSCACHE_Table.htm#kanchor286" UsedConditions="" LocalConditions="" />
                         </Links>
                         <SeeAlsoLinks />
                         <IndexControlLinks />
@@ -694,7 +694,7 @@
                     <IndexEntry Term="SkillCategory">
                         <Entries />
                         <Links>
-                            <IndexLink Title="SKILLCATEGORY Table" Link="/Content/S_Tables/SKILLCATEGORY_Table.htm#kanchor288" UsedConditions="" LocalConditions="" />
+                            <IndexLink Title="SKILLCATEGORY Table" Link="/Content/S_Tables/SKILLCATEGORY_Table.htm#kanchor287" UsedConditions="" LocalConditions="" />
                         </Links>
                         <SeeAlsoLinks />
                         <IndexControlLinks />
@@ -703,7 +703,7 @@
                     <IndexEntry Term="StandardProblems">
                         <Entries />
                         <Links>
-                            <IndexLink Title="STANDARDPROBLEMS Table" Link="/Content/S_Tables/STANDARDPROBLEMS_Table.htm#kanchor289" UsedConditions="" LocalConditions="" />
+                            <IndexLink Title="STANDARDPROBLEMS Table" Link="/Content/S_Tables/STANDARDPROBLEMS_Table.htm#kanchor288" UsedConditions="" LocalConditions="" />
                         </Links>
                         <SeeAlsoLinks />
                         <IndexControlLinks />
@@ -712,7 +712,7 @@
                     <IndexEntry Term="StandardResolutions">
                         <Entries />
                         <Links>
-                            <IndexLink Title="STANDARDRESOLUTIONS Table" Link="/Content/S_Tables/STANDARDRESOLUTIONS_Table.htm#kanchor290" UsedConditions="" LocalConditions="" />
+                            <IndexLink Title="STANDARDRESOLUTIONS Table" Link="/Content/S_Tables/STANDARDRESOLUTIONS_Table.htm#kanchor289" UsedConditions="" LocalConditions="" />
                         </Links>
                         <SeeAlsoLinks />
                         <IndexControlLinks />
@@ -722,14 +722,14 @@
                 <Links>
                     <IndexLink Title="CONTACTRESPONSE Table" Link="/Content/C_Tables/CONTACTRESPONSE_Table.htm#kanchor52" UsedConditions="" LocalConditions="" />
                     <IndexLink Title="PROJECTPLUGIN Table" Link="/Content/P_Tables/PROJECTPLUGIN_Table.htm#kanchor164" UsedConditions="" LocalConditions="" />
-                    <IndexLink Title="CAMPAIGNCONTACT Table" Link="/Content/C_Tables/CAMPAIGNCONTACT_Table.htm#kanchor283" UsedConditions="" LocalConditions="" />
-                    <IndexLink Title="CONCURRENTUSER Table" Link="/Content/C_Tables/CONCURRENTUSER_Table.htm#kanchor284" UsedConditions="" LocalConditions="" />
-                    <IndexLink Title="EMAILPROFILE Table" Link="/Content/E_Tables/EMAILPROFILE_Table.htm#kanchor285" UsedConditions="" LocalConditions="" />
-                    <IndexLink Title="SALESORDERDETAIL Table" Link="/Content/S_Tables/SALESORDERDETAIL_Table.htm#kanchor286" UsedConditions="" LocalConditions="" />
-                    <IndexLink Title="SECRIGHTSCACHE Table" Link="/Content/S_Tables/SECRIGHTSCACHE_Table.htm#kanchor287" UsedConditions="" LocalConditions="" />
-                    <IndexLink Title="SKILLCATEGORY Table" Link="/Content/S_Tables/SKILLCATEGORY_Table.htm#kanchor288" UsedConditions="" LocalConditions="" />
-                    <IndexLink Title="STANDARDPROBLEMS Table" Link="/Content/S_Tables/STANDARDPROBLEMS_Table.htm#kanchor289" UsedConditions="" LocalConditions="" />
-                    <IndexLink Title="STANDARDRESOLUTIONS Table" Link="/Content/S_Tables/STANDARDRESOLUTIONS_Table.htm#kanchor290" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="CAMPAIGNCONTACT Table" Link="/Content/C_Tables/CAMPAIGNCONTACT_Table.htm#kanchor282" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="CONCURRENTUSER Table" Link="/Content/C_Tables/CONCURRENTUSER_Table.htm#kanchor283" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="EMAILPROFILE Table" Link="/Content/E_Tables/EMAILPROFILE_Table.htm#kanchor284" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SALESORDERDETAIL Table" Link="/Content/S_Tables/SALESORDERDETAIL_Table.htm#kanchor285" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SECRIGHTSCACHE Table" Link="/Content/S_Tables/SECRIGHTSCACHE_Table.htm#kanchor286" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SKILLCATEGORY Table" Link="/Content/S_Tables/SKILLCATEGORY_Table.htm#kanchor287" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="STANDARDPROBLEMS Table" Link="/Content/S_Tables/STANDARDPROBLEMS_Table.htm#kanchor288" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="STANDARDRESOLUTIONS Table" Link="/Content/S_Tables/STANDARDRESOLUTIONS_Table.htm#kanchor289" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -738,7 +738,7 @@
             <IndexEntry Term="EMAILPROFILE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="EMAILPROFILE Table" Link="/Content/E_Tables/EMAILPROFILE_Table.htm#kanchor285" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="EMAILPROFILE Table" Link="/Content/E_Tables/EMAILPROFILE_Table.htm#kanchor284" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -846,7 +846,7 @@
             <IndexEntry Term="Help">
                 <Entries />
                 <Links>
-                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_sage_software.htm#kanchor9" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_saleslogix.htm#kanchor9" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -1905,15 +1905,6 @@
                 <IndexControlLinks />
                 <SortAsLinks />
             </IndexEntry>
-            <IndexEntry Term="Sage SalesLogix Database Help System">
-                <Entries />
-                <Links>
-                    <IndexLink Title="SalesLogix Database Help System" Link="/Content/SalesLogix_Database_Help_System.htm#kanchor1" UsedConditions="" LocalConditions="" />
-                </Links>
-                <SeeAlsoLinks />
-                <IndexControlLinks />
-                <SortAsLinks />
-            </IndexEntry>
             <IndexEntry Term="SALESDASHBOARD Table">
                 <Entries />
                 <Links>
@@ -1926,7 +1917,7 @@
             <IndexEntry Term="Saleslogix 8.1">
                 <Entries />
                 <Links>
-                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_sage_software.htm#kanchor6" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_saleslogix.htm#kanchor6" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -1935,7 +1926,16 @@
             <IndexEntry Term="Saleslogix 8.1 Database">
                 <Entries />
                 <Links>
-                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_sage_software.htm#kanchor6" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_saleslogix.htm#kanchor6" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Saleslogix Database Help System">
+                <Entries />
+                <Links>
+                    <IndexLink Title="SalesLogix Database Help System" Link="/Content/SalesLogix_Database_Help_System.htm#kanchor1" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -1962,7 +1962,7 @@
             <IndexEntry Term="SALESORDERDETAIL Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SALESORDERDETAIL Table" Link="/Content/S_Tables/SALESORDERDETAIL_Table.htm#kanchor286" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SALESORDERDETAIL Table" Link="/Content/S_Tables/SALESORDERDETAIL_Table.htm#kanchor285" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2052,7 +2052,7 @@
             <IndexEntry Term="SECRIGHTSCACHE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SECRIGHTSCACHE Table" Link="/Content/S_Tables/SECRIGHTSCACHE_Table.htm#kanchor287" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SECRIGHTSCACHE Table" Link="/Content/S_Tables/SECRIGHTSCACHE_Table.htm#kanchor286" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2097,7 +2097,7 @@
             <IndexEntry Term="SKILLCATEGORY Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SKILLCATEGORY Table" Link="/Content/S_Tables/SKILLCATEGORY_Table.htm#kanchor288" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SKILLCATEGORY Table" Link="/Content/S_Tables/SKILLCATEGORY_Table.htm#kanchor287" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2193,19 +2193,10 @@
                 <IndexControlLinks />
                 <SortAsLinks />
             </IndexEntry>
-            <IndexEntry Term="SLXSQLDEFAULT Table">
-                <Entries />
-                <Links>
-                    <IndexLink Title="SLXSQLDEFAULT Table" Link="/Content/S_Tables/SLXQUERYSQLDEFAULT_Table.htm#kanchor221" UsedConditions="" LocalConditions="" />
-                </Links>
-                <SeeAlsoLinks />
-                <IndexControlLinks />
-                <SortAsLinks />
-            </IndexEntry>
             <IndexEntry Term="SLXSQLSCALARFN Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXSQLSCALARFN Table" Link="/Content/S_Tables/SLXSQLSCALARFN_Table.htm#kanchor222" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXSQLSCALARFN Table" Link="/Content/S_Tables/SLXSQLSCALARFN_Table.htm#kanchor221" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2214,7 +2205,7 @@
             <IndexEntry Term="SLXTRIGGERS Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXTRIGGERS Table" Link="/Content/S_Tables/SLXTRIGGERS_Table.htm#kanchor223" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXTRIGGERS Table" Link="/Content/S_Tables/SLXTRIGGERS_Table.htm#kanchor222" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2223,7 +2214,7 @@
             <IndexEntry Term="SLXWEBACTION Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXWEBACTION Table" Link="/Content/S_Tables/SLXWEBACTION_Table.htm#kanchor224" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXWEBACTION Table" Link="/Content/S_Tables/SLXWEBACTION_Table.htm#kanchor223" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2232,7 +2223,7 @@
             <IndexEntry Term="SLXWEBALIAS Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXWEBALIAS Table" Link="/Content/S_Tables/SLXWEBALIAS_Table.htm#kanchor225" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXWEBALIAS Table" Link="/Content/S_Tables/SLXWEBALIAS_Table.htm#kanchor224" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2241,7 +2232,7 @@
             <IndexEntry Term="SLXWEBDATA Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXWEBDATA Table" Link="/Content/S_Tables/SLXWEBDATA_Table.htm#kanchor226" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXWEBDATA Table" Link="/Content/S_Tables/SLXWEBDATA_Table.htm#kanchor225" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2250,7 +2241,7 @@
             <IndexEntry Term="SLXWEBGROUP Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXWEBGROUP Table" Link="/Content/S_Tables/SLXWEBGROUP_Table.htm#kanchor227" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXWEBGROUP Table" Link="/Content/S_Tables/SLXWEBGROUP_Table.htm#kanchor226" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2259,7 +2250,7 @@
             <IndexEntry Term="SLXWEBGROUPITEM Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXWEBGROUPITEM Table" Link="/Content/S_Tables/SLXWEBGROUPITEM_Table.htm#kanchor228" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXWEBGROUPITEM Table" Link="/Content/S_Tables/SLXWEBGROUPITEM_Table.htm#kanchor227" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2268,7 +2259,7 @@
             <IndexEntry Term="SLXWEBOVERRIDE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXWEBOVERRIDE Table" Link="/Content/S_Tables/SLXWEBOVERRIDE_Table.htm#kanchor229" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXWEBOVERRIDE Table" Link="/Content/S_Tables/SLXWEBOVERRIDE_Table.htm#kanchor228" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2277,7 +2268,7 @@
             <IndexEntry Term="SLXWEBQUERY Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXWEBQUERY Table" Link="/Content/S_Tables/SLXWEBQUERY_Table.htm#kanchor230" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXWEBQUERY Table" Link="/Content/S_Tables/SLXWEBQUERY_Table.htm#kanchor229" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2286,7 +2277,7 @@
             <IndexEntry Term="SLXWEBSERVER Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXWEBSERVER Table" Link="/Content/S_Tables/SLXWEBSERVER_Table.htm#kanchor231" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXWEBSERVER Table" Link="/Content/S_Tables/SLXWEBSERVER_Table.htm#kanchor230" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2295,7 +2286,7 @@
             <IndexEntry Term="SLXWEBTEMPLATE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXWEBTEMPLATE Table" Link="/Content/S_Tables/SLXWEBTEMPLATE_Table.htm#kanchor232" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXWEBTEMPLATE Table" Link="/Content/S_Tables/SLXWEBTEMPLATE_Table.htm#kanchor231" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2304,7 +2295,7 @@
             <IndexEntry Term="SLXWEBUSERDEVICE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXWEBUSERDEVICE Table" Link="/Content/S_Tables/SLXWEBUSERDEVICE_Table.htm#kanchor233" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXWEBUSERDEVICE Table" Link="/Content/S_Tables/SLXWEBUSERDEVICE_Table.htm#kanchor232" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2313,7 +2304,7 @@
             <IndexEntry Term="SLXWEBUSERINFO Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SLXWEBUSERINFO Table" Link="/Content/S_Tables/SLXWEBUSERINFO_Table.htm#kanchor234" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SLXWEBUSERINFO Table" Link="/Content/S_Tables/SLXWEBUSERINFO_Table.htm#kanchor233" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2322,7 +2313,7 @@
             <IndexEntry Term="STANDARDPROBLEMS Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="STANDARDPROBLEMS Table" Link="/Content/S_Tables/STANDARDPROBLEMS_Table.htm#kanchor289" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="STANDARDPROBLEMS Table" Link="/Content/S_Tables/STANDARDPROBLEMS_Table.htm#kanchor288" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2331,7 +2322,7 @@
             <IndexEntry Term="STANDARDRESOLUTIONS Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="STANDARDRESOLUTIONS Table" Link="/Content/S_Tables/STANDARDRESOLUTIONS_Table.htm#kanchor290" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="STANDARDRESOLUTIONS Table" Link="/Content/S_Tables/STANDARDRESOLUTIONS_Table.htm#kanchor289" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2340,7 +2331,7 @@
             <IndexEntry Term="SUBSCRIPTIONRULES Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SUBSCRIPTIONRULES Table" Link="/Content/S_Tables/SUBSCRIPTIONRULES_Table.htm#kanchor235" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SUBSCRIPTIONRULES Table" Link="/Content/S_Tables/SUBSCRIPTIONRULES_Table.htm#kanchor234" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2349,7 +2340,7 @@
             <IndexEntry Term="SYNCDIGEST Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SYNCDIGEST Table" Link="/Content/S_Tables/SYNCDIGEST_Table.htm#kanchor236" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SYNCDIGEST Table" Link="/Content/S_Tables/SYNCDIGEST_Table.htm#kanchor235" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2358,7 +2349,7 @@
             <IndexEntry Term="SYNCFILETRACKING Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SYNCFILETRACKING Table" Link="/Content/S_Tables/SYNCFILETRACKING_Table.htm#kanchor237" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SYNCFILETRACKING Table" Link="/Content/S_Tables/SYNCFILETRACKING_Table.htm#kanchor236" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2367,7 +2358,7 @@
             <IndexEntry Term="SYNCJOB Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SYNCJOB Table" Link="/Content/S_Tables/SYNCJOB_Table.htm#kanchor238" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SYNCJOB Table" Link="/Content/S_Tables/SYNCJOB_Table.htm#kanchor237" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2376,7 +2367,7 @@
             <IndexEntry Term="SYNCJOBHISTORY Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SYNCJOBHISTORY Table" Link="/Content/S_Tables/SYNCJOBHISTORY_Table.htm#kanchor239" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SYNCJOBHISTORY Table" Link="/Content/S_Tables/SYNCJOBHISTORY_Table.htm#kanchor238" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2385,7 +2376,7 @@
             <IndexEntry Term="SYNCRESULT Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SYNCRESULT Table" Link="/Content/S_Tables/SYNCRESULT_Table.htm#kanchor240" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SYNCRESULT Table" Link="/Content/S_Tables/SYNCRESULT_Table.htm#kanchor239" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2394,7 +2385,7 @@
             <IndexEntry Term="SYNCSECTABLES Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SYNCSECTABLES Table" Link="/Content/S_Tables/SYNCSECTABLES_Table.htm#kanchor241" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SYNCSECTABLES Table" Link="/Content/S_Tables/SYNCSECTABLES_Table.htm#kanchor240" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2403,7 +2394,7 @@
             <IndexEntry Term="SYNCSEQUENCING Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SYNCSEQUENCING Table" Link="/Content/S_Tables/SYNCSEQUENCING_Table.htm#kanchor242" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SYNCSEQUENCING Table" Link="/Content/S_Tables/SYNCSEQUENCING_Table.htm#kanchor241" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2412,7 +2403,7 @@
             <IndexEntry Term="SYNCSERVER Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SYNCSERVER Table" Link="/Content/S_Tables/SYNCSERVER_Table.htm#kanchor243" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SYNCSERVER Table" Link="/Content/S_Tables/SYNCSERVER_Table.htm#kanchor242" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2421,7 +2412,7 @@
             <IndexEntry Term="SYNCSERVICEFILE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SYNCSERVICEFILE Table" Link="/Content/S_Tables/SYNCSERVICEFILE_Table.htm#kanchor244" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SYNCSERVICEFILE Table" Link="/Content/S_Tables/SYNCSERVICEFILE_Table.htm#kanchor243" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2430,7 +2421,7 @@
             <IndexEntry Term="SYNCTRANSFER Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SYNCTRANSFER Table" Link="/Content/S_Tables/SYNCTRANSFER_Table.htm#kanchor245" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SYNCTRANSFER Table" Link="/Content/S_Tables/SYNCTRANSFER_Table.htm#kanchor244" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2439,7 +2430,7 @@
             <IndexEntry Term="SYSTEMINFO Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="SYSTEMINFO Table" Link="/Content/S_Tables/SYSTEMINFO_Table.htm#kanchor246" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="SYSTEMINFO Table" Link="/Content/S_Tables/SYSTEMINFO_Table.htm#kanchor245" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2475,7 +2466,7 @@
             <IndexEntry Term="TARGETRESPONSE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TARGETRESPONSE Table" Link="/Content/T_Tables/TARGETRESPONSE_Table.htm#kanchor247" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TARGETRESPONSE Table" Link="/Content/T_Tables/TARGETRESPONSE_Table.htm#kanchor246" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2484,7 +2475,7 @@
             <IndexEntry Term="Technical Support">
                 <Entries />
                 <Links>
-                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_sage_software.htm#kanchor8" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="Contact Saleslogix" Link="/Content/Common_Topics/contacting_saleslogix.htm#kanchor8" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2493,7 +2484,7 @@
             <IndexEntry Term="TICKET Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKET Table" Link="/Content/T_Tables/TICKET_Table.htm#kanchor248" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKET Table" Link="/Content/T_Tables/TICKET_Table.htm#kanchor247" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2502,7 +2493,7 @@
             <IndexEntry Term="TICKETACCOUNTPRODUCT Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKETACCOUNTPRODUCT Table" Link="/Content/T_Tables/TICKETACCOUNTPRODUCT_Table.htm#kanchor249" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKETACCOUNTPRODUCT Table" Link="/Content/T_Tables/TICKETACCOUNTPRODUCT_Table.htm#kanchor248" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2511,7 +2502,7 @@
             <IndexEntry Term="TICKETACTIVITY Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKETACTIVITY Table" Link="/Content/T_Tables/TICKETACTIVITY_Table.htm#kanchor250" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKETACTIVITY Table" Link="/Content/T_Tables/TICKETACTIVITY_Table.htm#kanchor249" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2520,7 +2511,7 @@
             <IndexEntry Term="TICKETACTIVITYITEM Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKETACTIVITYITEM Table" Link="/Content/T_Tables/TICKETACTIVITYITEM_Table.htm#kanchor251" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKETACTIVITYITEM Table" Link="/Content/T_Tables/TICKETACTIVITYITEM_Table.htm#kanchor250" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2529,7 +2520,7 @@
             <IndexEntry Term="TICKETACTIVITYRATE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKETACTIVITYRATE Table" Link="/Content/T_Tables/TICKETACTIVITYRATE_Table.htm#kanchor252" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKETACTIVITYRATE Table" Link="/Content/T_Tables/TICKETACTIVITYRATE_Table.htm#kanchor251" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2538,7 +2529,7 @@
             <IndexEntry Term="TICKETAREAOWNER Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKETAREAOWNER Table" Link="/Content/T_Tables/TICKETAREAOWNER_Table.htm#kanchor253" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKETAREAOWNER Table" Link="/Content/T_Tables/TICKETAREAOWNER_Table.htm#kanchor252" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2547,7 +2538,7 @@
             <IndexEntry Term="TICKETHISTORY Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKETHISTORY Table" Link="/Content/T_Tables/TICKETHISTORY_Table.htm#kanchor254" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKETHISTORY Table" Link="/Content/T_Tables/TICKETHISTORY_Table.htm#kanchor253" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2556,7 +2547,7 @@
             <IndexEntry Term="TICKETPROBLEM Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKETPROBLEM Table" Link="/Content/T_Tables/TICKETPROBLEM_Table.htm#kanchor255" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKETPROBLEM Table" Link="/Content/T_Tables/TICKETPROBLEM_Table.htm#kanchor254" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2565,7 +2556,7 @@
             <IndexEntry Term="TICKETPROBLEMSOLUTIONTYPE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKETPROBLEMSOLUTIONTYPE Table" Link="/Content/T_Tables/TICKETPROBLEMSOLUTIONTYPE_Table.htm#kanchor256" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKETPROBLEMSOLUTIONTYPE Table" Link="/Content/T_Tables/TICKETPROBLEMSOLUTIONTYPE_Table.htm#kanchor255" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2574,7 +2565,7 @@
             <IndexEntry Term="TICKETPROBLEMTYPE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKETPROBLEMTYPE Table" Link="/Content/T_Tables/TICKETPROBLEMTYPE_Table.htm#kanchor257" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKETPROBLEMTYPE Table" Link="/Content/T_Tables/TICKETPROBLEMTYPE_Table.htm#kanchor256" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2583,7 +2574,7 @@
             <IndexEntry Term="TICKETSOLUTION Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKETSOLUTION Table" Link="/Content/T_Tables/TICKETSOLUTION_Table.htm#kanchor258" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKETSOLUTION Table" Link="/Content/T_Tables/TICKETSOLUTION_Table.htm#kanchor257" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2592,7 +2583,7 @@
             <IndexEntry Term="TICKETSOLUTIONTYPE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="TICKETSOLUTIONTYPE Table" Link="/Content/T_Tables/TICKETSOLUTIONTYPE_Table.htm#kanchor259" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="TICKETSOLUTIONTYPE Table" Link="/Content/T_Tables/TICKETSOLUTIONTYPE_Table.htm#kanchor258" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2610,7 +2601,7 @@
             <IndexEntry Term="UNITOFMEASURE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="UNITOFMEASURE Table" Link="/Content/U_Tables/UNITOFMEASURE_Table.htm#kanchor260" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="UNITOFMEASURE Table" Link="/Content/U_Tables/UNITOFMEASURE_Table.htm#kanchor259" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2619,7 +2610,7 @@
             <IndexEntry Term="URGENCY Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="URGENCY Table" Link="/Content/U_Tables/URGENCY_Table.htm#kanchor261" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="URGENCY Table" Link="/Content/U_Tables/URGENCY_Table.htm#kanchor260" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2628,7 +2619,7 @@
             <IndexEntry Term="USER_ACTIVITY Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USER_ACTIVITY Table" Link="/Content/U_Tables/USER_ACTIVITY_Table.htm#kanchor262" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USER_ACTIVITY Table" Link="/Content/U_Tables/USER_ACTIVITY_Table.htm#kanchor261" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2637,7 +2628,7 @@
             <IndexEntry Term="USER_OAUTHTOKEN Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USER_OAUTHTOKEN Table" Link="/Content/U_Tables/USEROAUTHTOKEN_Table.htm#kanchor263" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USER_OAUTHTOKEN Table" Link="/Content/U_Tables/USEROAUTHTOKEN_Table.htm#kanchor262" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2646,7 +2637,7 @@
             <IndexEntry Term="USERCALENDAR Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERCALENDAR Table" Link="/Content/U_Tables/USERCALENDAR_Table.htm#kanchor264" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERCALENDAR Table" Link="/Content/U_Tables/USERCALENDAR_Table.htm#kanchor263" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2655,7 +2646,7 @@
             <IndexEntry Term="USERCALENDARFAVORITE">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERCALENDARFAVORITE" Link="/Content/U_Tables/USERCALENDARFAVORITE.htm#kanchor265" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERCALENDARFAVORITE" Link="/Content/U_Tables/USERCALENDARFAVORITE.htm#kanchor264" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2664,7 +2655,7 @@
             <IndexEntry Term="USERFEATURESECURITY Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERFEATURESECURITY Table" Link="/Content/U_Tables/USERFEATURESECURITY_Table.htm#kanchor266" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERFEATURESECURITY Table" Link="/Content/U_Tables/USERFEATURESECURITY_Table.htm#kanchor265" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2673,7 +2664,7 @@
             <IndexEntry Term="USERINFO Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERINFO Table" Link="/Content/U_Tables/USERINFO_Table.htm#kanchor267" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERINFO Table" Link="/Content/U_Tables/USERINFO_Table.htm#kanchor266" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2682,7 +2673,7 @@
             <IndexEntry Term="USERINTEGRATIONMAP Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERINTEGRATIONMAP Table" Link="/Content/U_Tables/USERINTEGRATIONMAP.htm#kanchor268" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERINTEGRATIONMAP Table" Link="/Content/U_Tables/USERINTEGRATIONMAP.htm#kanchor267" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2691,7 +2682,7 @@
             <IndexEntry Term="USERNOTIFICATION Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERNOTIFICATION Table" Link="/Content/U_Tables/USERNOTIFICATION_Table.htm#kanchor269" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERNOTIFICATION Table" Link="/Content/U_Tables/USERNOTIFICATION_Table.htm#kanchor268" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2700,7 +2691,7 @@
             <IndexEntry Term="USEROPTIONDEF Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USEROPTIONDEF Table" Link="/Content/U_Tables/USEROPTIONDEF_Table.htm#kanchor270" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USEROPTIONDEF Table" Link="/Content/U_Tables/USEROPTIONDEF_Table.htm#kanchor269" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2709,7 +2700,7 @@
             <IndexEntry Term="USEROPTIONS">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USEROPTIONS" Link="/Content/U_Tables/USEROPTIONS.htm#kanchor271" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USEROPTIONS" Link="/Content/U_Tables/USEROPTIONS.htm#kanchor270" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2718,7 +2709,7 @@
             <IndexEntry Term="USERPROFILE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERPROFILE Table" Link="/Content/U_Tables/USERPROFILE_Table.htm#kanchor272" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERPROFILE Table" Link="/Content/U_Tables/USERPROFILE_Table.htm#kanchor271" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2727,7 +2718,7 @@
             <IndexEntry Term="USERROLE Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERROLE Table" Link="/Content/U_Tables/userrole_table.htm#kanchor273" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERROLE Table" Link="/Content/U_Tables/userrole_table.htm#kanchor272" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2736,7 +2727,7 @@
             <IndexEntry Term="USERSECFUNCTIONS Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERSECFUNCTIONS Table" Link="/Content/U_Tables/USERSECFUNCTIONS_Table.htm#kanchor274" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERSECFUNCTIONS Table" Link="/Content/U_Tables/USERSECFUNCTIONS_Table.htm#kanchor273" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2745,7 +2736,7 @@
             <IndexEntry Term="USERSECURITY Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERSECURITY Table" Link="/Content/U_Tables/USERSECURITY_Table.htm#kanchor275" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERSECURITY Table" Link="/Content/U_Tables/USERSECURITY_Table.htm#kanchor274" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2754,7 +2745,7 @@
             <IndexEntry Term="USERSUBSCRIPTION Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERSUBSCRIPTION Table" Link="/Content/U_Tables/USERSUBSCRIPTION_Table.htm#kanchor276" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERSUBSCRIPTION Table" Link="/Content/U_Tables/USERSUBSCRIPTION_Table.htm#kanchor275" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2763,7 +2754,7 @@
             <IndexEntry Term="USERTRACKINGEVENT Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERTRACKINGEVENT Table" Link="/Content/U_Tables/USERTRACKINGEVENT_Table.htm#kanchor277" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERTRACKINGEVENT Table" Link="/Content/U_Tables/USERTRACKINGEVENT_Table.htm#kanchor276" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2772,7 +2763,7 @@
             <IndexEntry Term="USERTRACKINGEVTEXT Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERTRACKINGEVTEXT Table" Link="/Content/U_Tables/USERTRACKINGEVTEXT_Table.htm#kanchor279" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERTRACKINGEVTEXT Table" Link="/Content/U_Tables/USERTRACKINGEVTEXT_Table.htm#kanchor278" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2781,7 +2772,7 @@
             <IndexEntry Term="USERTRAKNGEVTANTN Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERTRAKNGEVTANTN Table" Link="/Content/U_Tables/USERTRAKNGEVTANTN_Table.htm#kanchor278" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERTRAKNGEVTANTN Table" Link="/Content/U_Tables/USERTRAKNGEVTANTN_Table.htm#kanchor277" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2790,7 +2781,7 @@
             <IndexEntry Term="USERVIEW Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="USERVIEW Table" Link="/Content/U_Tables/USERVIEW_Table.htm#kanchor280" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="USERVIEW Table" Link="/Content/U_Tables/USERVIEW_Table.htm#kanchor279" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2817,7 +2808,7 @@
             <IndexEntry Term="VIRTUALFILESYSTEM Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="VIRTUALFILESYSTEM Table" Link="/Content/V_Tables/virtualfilesystem_table.htm#kanchor281" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="VIRTUALFILESYSTEM Table" Link="/Content/V_Tables/virtualfilesystem_table.htm#kanchor280" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />
@@ -2835,7 +2826,7 @@
             <IndexEntry Term="WORKAREA Table">
                 <Entries />
                 <Links>
-                    <IndexLink Title="WORKAREA Table" Link="/Content/W_Tables/WORKAREA_Table.htm#kanchor282" UsedConditions="" LocalConditions="" />
+                    <IndexLink Title="WORKAREA Table" Link="/Content/W_Tables/WORKAREA_Table.htm#kanchor281" UsedConditions="" LocalConditions="" />
                 </Links>
                 <SeeAlsoLinks />
                 <IndexControlLinks />

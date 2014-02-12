@@ -4,244 +4,236 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
         <meta name="copyright" content="" /><title>QUALIFICATION Table</title>
         <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
         <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
         </script>
     </head>
     <body>
-        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor177"></a>QUALIFICATION Table</h1>
+        <h1><a name="kanchor177"></a>QUALIFICATION Table</h1>
         <p class="Infinitive">Added in Version 7.0</p>
         <p>The QUALIFICATION table stores information for lead qualification. This table contains information including, but not limited to, qualification category and description.</p>
         <p><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="../Legend.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Legend</a></span>
-            <br />
-&#160;</p>
-        <table style="padding-left: 3.00pt;padding-top: 5.00pt;padding-right: 3.00pt;padding-bottom: 3.00pt;vertical-align: Center;left: 0px;top: 120px;height: 219px;margin-left: 0;margin-right: auto;" cellspacing="0">
-            <col />
-            <col />
-            <col />
-            <col />
-            <tr style="vertical-align: center;height: 21px;">
-                <td style="border: Solid 1px #000000;" width="165">
-                    <p class="Tabletop">Field</p>
-                </td>
-                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="100">
-                    <p class="Tabletop">Datatype(Length)</p>
-                </td>
-                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="72">
-                    <p class="Tabletop">Allow Nulls</p>
-                </td>
-                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="195">
-                    <p class="Tabletop">Indexes</p>
-                </td>
-                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="148">
-                    <p class="Tabletop">Relationship</p>
-                </td>
-                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" width="235">
-                    <p class="Tabletop">Related Table and Field</p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+            <br />&#160;</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/TableStyle.css');" class="TableStyle-TableStyle" cellspacing="0">
+            <col class="Column-Column1" />
+            <col width="104" class="Column-Column1" />
+            <col width="80" class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" MadCap:conditions="" />
+            <col class="Column-Column1" MadCap:conditions="" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Field</th>
+                    <th class="HeadE-Column1-Header1">Datatype (Length)</th>
+                    <th class="HeadE-Column1-Header1">Allow Nulls</th>
+                    <th class="HeadE-Column1-Header1">Indexes</th>
+                    <th class="HeadE-Column1-Header1">Relationship</th>
+                    <th class="HeadD-Column1-Header1">Related Table and Field</th>
+                </tr>
+            </thead>
+            <tr style="vertical-align: center;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">QUALIFICATIONID <span style="font-weight: bold;">(PK)</span></p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">char(12)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">NOT NULL</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">QUALIFICATION_ID_PK <span style="font-weight: bold;">(CA)</span></p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">(One) to (Many)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
                     <p class="Table"><a href="../L_Tables/LEAD_QUALIFICATION_Table.htm">LEAD_QUALIFICATION.QUALIFICATIONID</a>
                     </p>
                 </td>
             </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+            <tr style="vertical-align: center;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">QUALIFICATION_CATEGORYID <span style="font-weight: bold;">(FK)</span></p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">char(12)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">NOT NULL</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">QUALIFICATION_QUAL_CATID <span style="font-weight: bold;">(IE)</span></p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table" style="font-weight: bold;">(Many) to (One)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
                     <p class="Table"><a href="QUALIFICATION_CATEGORY_Table.htm">QUALIFICATION_CATEGORY.QUALIFICATION_CATEGORYID</a>
                     </p>
                 </td>
             </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+            <tr style="vertical-align: center;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">CREATEUSER <span style="font-weight: bold;">(FK)</span></p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">char(12)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">NULLS</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">(Many) to (One)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
                     <p class="Table"><a href="../U_Tables/USERINFO_Table.htm">USERINFO.USERID</a>
                     </p>
                 </td>
             </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+            <tr style="vertical-align: center;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">CREATEDATE</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">datetime(8)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">NULLS</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p>&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
                     <p>&#160;</p>
                 </td>
             </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+            <tr style="vertical-align: center;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">MODIFYUSER <span style="font-weight: bold;">(FK)</span></p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">char(12)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">NULLS</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">(Many) to (One)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
                     <p class="Table"><a href="../U_Tables/USERINFO_Table.htm">USERINFO.USERID</a>
                     </p>
                 </td>
             </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+            <tr style="vertical-align: center;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">MODIFYDATE</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">datetime(8)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">NULLS</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p>&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
                     <p>&#160;</p>
                 </td>
             </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+            <tr style="vertical-align: center;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">DESCRIPTION</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">varchar(64)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">NULLS</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p>&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
                     <p>&#160;</p>
                 </td>
             </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+            <tr style="vertical-align: center;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">SHOWNOTES</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">char(1)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">NULLS</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p>&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
                     <p>&#160;</p>
                 </td>
             </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+            <tr style="vertical-align: center;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">SORTPOSITION</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">int(4)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">NULLS</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">QUALIFICATION_SORTPOSITION <span style="font-weight: bold;">(IE)</span></p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p>&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
                     <p>&#160;</p>
                 </td>
             </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+            <tr style="vertical-align: center;height: 16pt;" class="Body-Body1">
+                <td style="border-left: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">VISIBLE</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">char(1)</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">NULLS</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p class="Table">&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyE-Column1-Body1">
                     <p>&#160;</p>
                 </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
+                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="BodyD-Column1-Body1">
                     <p>&#160;</p>
                 </td>
             </tr>
