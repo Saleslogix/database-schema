@@ -4,7 +4,7 @@
 // {{MadCap}} //////////////////////////////////////////////////////////////////
 // Copyright: MadCap Software, Inc - www.madcapsoftware.com ////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-// <version>9.0.0.0</version>
+// <version>10.0.0.0</version>
 ////////////////////////////////////////////////////////////////////////////////
 */
 
@@ -350,5 +350,51 @@ a.MCToggler_0:focus
 a.MCToggler_0:hover
 {
 	
+}
+
+div.MCDropDown_0
+{
+	color: #0000ff;
+}
+
+a.MCDropDownHotSpot_0
+{
+	font-color: #008b8b;
+	font-size: inherit;
+	color: #0000ff;
+	text-decoration: none;
+}
+
+a.MCDropDownHotSpot_0:link
+{
+	font-color: #008b8b;
+	font-size: inherit;
+	color: #0000ff;
+	text-decoration: none;
+}
+
+a.MCDropDownHotSpot_0:visited
+{
+	font-color: #008b8b;
+	font-size: inherit;
+	color: #0000ff;
+	text-decoration: none;
+}
+
+a.MCDropDownHotSpot_0:focus
+{
+	
+}
+
+a.MCDropDownHotSpot_0:hover
+{
+	
+}
+
+div.MCDropDownHead_0
+{
+	margin-top: 3pt;
+	color: #0000ff;
+	text-decoration: none;
 }
 

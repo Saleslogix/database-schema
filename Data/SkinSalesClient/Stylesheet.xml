@@ -464,8 +464,19 @@
                 <Property Name="CrossReferenceOnFacingPage">on the facing page</Property>
                 <Property Name="BreadcrumbsYouAreHereText">You are here: </Property>
                 <Property Name="KeywordLinkText">Search Index</Property>
+                <Property Name="KeywordLinkIconAltText">Keyword Link Icon</Property>
                 <Property Name="RelatedTopicsText">Related Topics</Property>
+                <Property Name="RelatedTopicsIconAltText">Related Topics Link Icon</Property>
                 <Property Name="ConceptLinkText">See Also</Property>
+                <Property Name="ConceptLinkIconAltText">Concept Link Icon</Property>
+                <Property Name="DropDownOpenAltText">Open</Property>
+                <Property Name="DropDownClosedAltText">Closed</Property>
+                <Property Name="ExpandingOpenAltText">Open</Property>
+                <Property Name="ExpandingClosedAltText">Closed</Property>
+                <Property Name="GlossaryTermOpenAltText">Open</Property>
+                <Property Name="GlossaryTermClosedAltText">Closed</Property>
+                <Property Name="TogglerOpenAltText">Open</Property>
+                <Property Name="TogglerClosedAltText">Closed</Property>
             </Properties>
         </Style>
         <Style Name="Relationships">
@@ -626,6 +637,7 @@
                 <StyleClass Name="Toolbar">
                     <Properties>
                         <Property Name="BackgroundImage">url('ToolbarBackground.jpg')</Property>
+                        <Property Name="Scrolling">no</Property>
                         <Property Name="Height">28px</Property>
                     </Properties>
                 </StyleClass>

@@ -97,6 +97,9 @@
         <loc>http://saleslogix.github.io/database/Content/Views/Understanding_SalesLogix_Views.htm</loc>
     </url>
     <url>
+        <loc>http://saleslogix.github.io/database/Content/Triggers/Database_Triggers.htm</loc>
+    </url>
+    <url>
         <loc>http://saleslogix.github.io/database/Content/Legend.htm</loc>
     </url>
     <url>
@@ -920,6 +923,12 @@
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Content/General/feedback.htm</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Triggers/Disabling_Database_Triggers.htm</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Triggers/Vector_Clock.htm</loc>
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Skin/Blank.htm</loc>

@@ -1,7 +1,7 @@
 // {{MadCap}} //////////////////////////////////////////////////////////////////
 // Copyright: MadCap Software, Inc - www.madcapsoftware.com ////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-// <version>9.0.0.0</version>
+// <version>10.0.0.0</version>
 ////////////////////////////////////////////////////////////////////////////////
 
 //    Syntax:
@@ -2738,6 +2738,19 @@ function FMCIsDotNetHelp()
 	return targetType == "DotNetHelp";
 }
 
+/* -CatapultCompiler- -Begin- -Copy to CSH Javascript- */
+
+function FMCIsEclipseHelp() {
+    var bool = false;
+    var targetType = FMCGetAttribute(document.documentElement, "MadCap:TargetType");
+
+    if (targetType == null) {
+        return bool;
+    }
+
+    return targetType.Contains("EclipseHelp");
+}
+
 
 function FMCIsLocal()
 {
@@ -2950,14 +2963,17 @@ CMCXmlParser.prototype.LoadLocal = function (xmlFile, async)
 
 CMCXmlParser.prototype.LoadRemote	= function( xmlFile, async )
 {
-	if ( window.ActiveXObject )
-    {
+    if (window.ActiveXObject) {
         this.mXmlHttp = CMCXmlParser.GetMicrosoftXmlHttpObject();
     }
     else if ( window.XMLHttpRequest )
     {
         xmlFile = xmlFile.replace( /;/g, "%3B" );   // For Safari
         this.mXmlHttp = new XMLHttpRequest();
+    }
+
+    if (FMCIsEclipseHelp() && window.XDomainRequest) {
+        this.mXmlHttp = new XDomainRequest();
     }
     
     if ( this.mLoadFunc )
@@ -2971,8 +2987,8 @@ CMCXmlParser.prototype.LoadRemote	= function( xmlFile, async )
         this.mXmlHttp.send( null );
         
         if ( !async && (this.mXmlHttp.status == 0 || this.mXmlHttp.status == 200) )
-		{
-			this.mXmlDoc = this.mXmlHttp.responseXML;
+        {
+            this.mXmlDoc = this.mXmlHttp.responseXML;
 		}
     }
     catch ( err )
@@ -3106,9 +3122,9 @@ CMCXmlParser.GetXmlDoc = function (xmlFile, async, LoadFunc, args, loadContextOb
         CMCXmlParser._LoadingFilesPathMap.Remove(jsFileUrl.FullPath);
 
         if (success) {
-            var xmlString = CMCXmlParser._FilePathToXmlStringMap.GetItem(jsFileUrl.Name);
-            CMCXmlParser._FilePathToXmlStringMap.Remove(jsFileUrl.FullPath);
-            xmlDoc = CMCXmlParser.LoadXmlString(xmlString);
+        var xmlString = CMCXmlParser._FilePathToXmlStringMap.GetItem(jsFileUrl.Name);
+        CMCXmlParser._FilePathToXmlStringMap.Remove(jsFileUrl.FullPath);
+        xmlDoc = CMCXmlParser.LoadXmlString(xmlString);
         }
 
         // Check if there are any more in the queue. Do this before calling the callback function since the callback function might invoke another call to this same function.
@@ -3835,9 +3851,31 @@ CMCUrl.prototype.ToQuery = function(query)
 	return new CMCUrl(newPath);
 };
 
+CMCUrl.prototype.AlternateEclipsePath = function () {
+    var query = this.Query.substring(1, this.Query.length - 1);
+    var ret = this.PlainPath;
+    if (query.indexOf("topic=") != -1) {
+        ret = ret.substring(0, ret.indexOf("/help/") + "/help/".length);
+        var param_sets = query.split("&");
+        for (var i = 0; i < param_sets.length; i++) {
+            var key_val = param_sets[i].split("=");
+            var key = key_val[0];
+            var val = key_val[1];
+            while (val.indexOf("%2F") != -1) {
+                val = val.replace("%2F", "/");
+            }
+            if (key == "topic") {
+                ret = ret + "topic" + val;
+                break;
+            }
+        }
+    }
+    return ret;
+}
+
 CMCUrl.prototype.ToFolder	= function()
 {
-	var fullPath = this.PlainPath;
+	var fullPath = FMCIsEclipseHelp() ? this.AlternateEclipsePath() : this.PlainPath;
 	var pos = fullPath.lastIndexOf( "/" );
 	var newPath = fullPath.substring( 0, pos + 1 );
 

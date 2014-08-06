@@ -1,749 +1,760 @@
-CMCXmlParser._FilePathToXmlStringMap.Add(
-	'Stylesheet',
-	'<?xml version=\"1.0\" encoding=\"utf-8\"?>' +
-	'<Stylesheet>' +
-	'    <Styles>' +
-	'        <Style Name=\"ToolbarItem\">' +
-	'            <Classes>' +
-	'                <StyleClass Name=\"Logo\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Icon\">none</Property>' +
-	'                        <Property Name=\"ControlType\">Logo</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"QuickSearch\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Icon\">url(\'find.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/QuickSearch_selected.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/QuickSearch_over.gif\')</Property>' +
-	'                        <Property Name=\"ControlType\">QuickSearch</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"AddTopicToFavorites\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">AddTopicToFavorites</Property>' +
-	'                        <Property Name=\"Icon\">url(\'AddTopicToFavorites.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'AddTopicToFavorites_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'AddTopicToFavorites_selected.gif\')</Property>' +
-	'                        <Property Name=\"Tooltip\">Add topic to favorites</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Back\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">Back</Property>' +
-	'                        <Property Name=\"Icon\">url(\'backg.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'Previous%20Mouse%20Over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'Previous%20Selected.gif\')</Property>' +
-	'                        <Property Name=\"Tooltip\">Back</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Forward\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">Forward</Property>' +
-	'                        <Property Name=\"Icon\">url(\'nextg.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'Next%20Mouse%20Over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'Next%20Selected.gif\')</Property>' +
-	'                        <Property Name=\"Tooltip\">Forward</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Print\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">Print</Property>' +
-	'                        <Property Name=\"Icon\">url(\'Print.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'Print_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'Print_selected.gif\')</Property>' +
-	'                        <Property Name=\"OnClick\">ExpandAll( \"open\" );PrintTopic();ExpandAll( \"close\" )</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"SelectTOC\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">SelectTOC</Property>' +
-	'                        <Property Name=\"Icon\">url(\'SelectTocO.png\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'SelectToc_overO.png\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'SelectToc_selectedO.png\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"AccordionTitle\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">AccordionTitle</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"ExpandAll\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">ExpandAll</Property>' +
-	'                        <Property Name=\"Icon\">url(\'Expand.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'Expand_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'Expand_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"CollapseAll\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">CollapseAll</Property>' +
-	'                        <Property Name=\"Icon\">url(\'Collapse.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'Collapse_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'Collapse_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"RemoveHighlight\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">RemoveHighlight</Property>' +
-	'                        <Property Name=\"Icon\">url(\'Highlight.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'Highlight_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'Highlight_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"ToggleNavigationPane\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/HideNavigation.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/HideNavigation_selected.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/HideNavigation_over.gif\')</Property>' +
-	'                        <Property Name=\"CheckedIcon\">url(\'resources:WebHelp/Default.flwht/Images/HideNavigation_checked.gif\')</Property>' +
-	'                        <Property Name=\"ControlType\">ToggleNavigationPane</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Home\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">Home</Property>' +
-	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/Home.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/Home_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/Home_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Stop\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">Stop</Property>' +
-	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/Stop.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/Stop_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/Stop_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Refresh\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">Refresh</Property>' +
-	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/Refresh.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/Refresh_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/Refresh_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"SelectIndex\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">SelectIndex</Property>' +
-	'                        <Property Name=\"Icon\">url(\'SelectIndex.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'SelectIndex_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'SelectIndex_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"SelectSearch\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">SelectSearch</Property>' +
-	'                        <Property Name=\"Icon\">url(\'SelectSearch.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'SelectSearch_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'SelectSearch_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"SelectFavorites\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">SelectFavorites</Property>' +
-	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/SelectFavorites.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectFavorites_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectFavorites_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"SelectGlossary\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">SelectGlossary</Property>' +
-	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/SelectGlossary.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectGlossary_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectGlossary_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"SelectBrowseSequence\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">SelectBrowseSequence</Property>' +
-	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/SelectBrowseSequences.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectBrowseSequences_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectBrowseSequences_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"SelectCommunity\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">SelectCommunity</Property>' +
-	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/Community.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/Community_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/Community_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"TopicRatings\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"EmptyIcon\">url(\'resources:WebHelp/Default.flwht/Images/Rating0.gif\')</Property>' +
-	'                        <Property Name=\"FullIcon\">url(\'resources:WebHelp/Default.flwht/Images/RatingGold100.gif\')</Property>' +
-	'                        <Property Name=\"RatingSubmittedMessage\">Thank you for submitting your rating!</Property>' +
-	'                        <Property Name=\"ControlType\">TopicRatings</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"EditUserProfile\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">EditUserProfile</Property>' +
-	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/EditUserProfile.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/EditUserProfile_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/EditUserProfile_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"PreviousTopic\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">PreviousTopic</Property>' +
-	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/PreviousTopic.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/PreviousTopic_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/PreviousTopic_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"NextTopic\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">NextTopic</Property>' +
-	'                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/NextTopic.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/NextTopic_over.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/NextTopic_selected.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"CurrentTopicIndex\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"PaddingLeft\">2px</Property>' +
-	'                        <Property Name=\"PaddingRight\">2px</Property>' +
-	'                        <Property Name=\"Label\">Page {n} of {total}</Property>' +
-	'                        <Property Name=\"ControlType\">CurrentTopicIndex</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Separator\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ControlType\">Separator</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'            </Classes>' +
-	'        </Style>' +
-	'        <Style Name=\"AccordionItem\">' +
-	'            <Classes>' +
-	'                <StyleClass Name=\"TOC\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Table of Contents</Property>' +
-	'                        <Property Name=\"Icon\">url(\'BookO.png\')</Property>' +
-	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
-	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
-	'                        <Property Name=\"ItemHeight\">28px</Property>' +
-	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Search\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Search</Property>' +
-	'                        <Property Name=\"Icon\">url(\'find.gif\')</Property>' +
-	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
-	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
-	'                        <Property Name=\"ItemHeight\">28px</Property>' +
-	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"BrowseSequence\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Browse Sequences</Property>' +
-	'                        <Property Name=\"Icon\">url(\'BrowsesequencesIconO.png\')</Property>' +
-	'                        <Property Name=\"Color\">#00678a</Property>' +
-	'                        <Property Name=\"BackgroundGradient\">default</Property>' +
-	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
-	'                        <Property Name=\"ItemHeight\">28px</Property>' +
-	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Favorites\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Favorites</Property>' +
-	'                        <Property Name=\"Icon\">url(\'FavoritesIconO.png\')</Property>' +
-	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
-	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
-	'                        <Property Name=\"ItemHeight\">28px</Property>' +
-	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"IconTray\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"ItemHeight\">28px</Property>' +
-	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
-	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
-	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Index\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Index</Property>' +
-	'                        <Property Name=\"Icon\">url(\'IndexIcon.gif\')</Property>' +
-	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
-	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
-	'                        <Property Name=\"ItemHeight\">28px</Property>' +
-	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Glossary\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Glossary</Property>' +
-	'                        <Property Name=\"Icon\">url(\'GlossaryIcon.gif\')</Property>' +
-	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
-	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
-	'                        <Property Name=\"ItemHeight\">28px</Property>' +
-	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Community\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Community</Property>' +
-	'                        <Property Name=\"Icon\">url(\'CommunityIcon.gif\')</Property>' +
-	'                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
-	'                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
-	'                        <Property Name=\"ItemHeight\">28px</Property>' +
-	'                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'            </Classes>' +
-	'            <Properties>' +
-	'                <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>' +
-	'                <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>' +
-	'                <Property Name=\"ItemHeight\">28px</Property>' +
-	'                <Property Name=\"BorderBottom\">solid 1px #00678a</Property>' +
-	'            </Properties>' +
-	'        </Style>' +
-	'        <Style Name=\"TocEntry\">' +
-	'            <Properties>' +
-	'                <Property Name=\"Color\">#000000</Property>' +
-	'                <Property Name=\"TopicIcon\">url(\'Topic.gif\')</Property>' +
-	'                <Property Name=\"BookIcon\">url(\'BookO.png\')</Property>' +
-	'                <Property Name=\"BookOpenIcon\">url(\'BookOpenO.png\')</Property>' +
-	'            </Properties>' +
-	'        </Style>' +
-	'        <Style Name=\"Control\">' +
-	'            <Classes>' +
-	'                <StyleClass Name=\"AddSearchToFavoritesButton\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Icon\">url(\'AddTopicToFavorites.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'AddTopicToFavorites_selected.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'AddTopicToFavorites_over.gif\')</Property>' +
-	'                        <Property Name=\"Tooltip\">Add search string to favorites</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"TopicFavoritesDeleteButton\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Icon\">url(\'Delete.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'Delete_selected.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'Delete_over.gif\')</Property>' +
-	'                        <Property Name=\"Tooltip\">Delete selected favorite</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"SearchFavoritesDeleteButton\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Icon\">url(\'Delete.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'Delete_selected.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'Delete_over.gif\')</Property>' +
-	'                        <Property Name=\"Tooltip\">Delete selected favorite</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"SearchResults\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"TableSummary\">This table contains the results of the search that was performed. The first column indicates the search rank and the second column indicates the title of the topic that contains the search result.</Property>' +
-	'                        <Property Name=\"RankLabel\">Rank</Property>' +
-	'                        <Property Name=\"TitleLabel\">Title</Property>' +
-	'                        <Property Name=\"TopicResultsLabel\">Topic Results</Property>' +
-	'                        <Property Name=\"CommunityResultsLabel\">Community Results</Property>' +
-	'                        <Property Name=\"ShowAllCommunityResults\">Show all community results</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"CommentsAddButton\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Icon\">url(\'AddComment.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'AddComment_selected.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'AddComment_over.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"CommentsReplyButton\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Icon\">url(\'ReplyComment.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'ReplyComment_selected.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'ReplyComment_over.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"CommentsRefreshButton\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Icon\">url(\'RefreshTopicComments.gif\')</Property>' +
-	'                        <Property Name=\"PressedIcon\">url(\'RefreshTopicComments_selected.gif\')</Property>' +
-	'                        <Property Name=\"HoverIcon\">url(\'RefreshTopicComments_over.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"CommentNode\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Icon\">url(\'Comment.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"CommentReplyNode\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Icon\">url(\'CommentReply.gif\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"NavigationLinkTop\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Open topic with navigation</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"NavigationLinkBottom\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Open topic with navigation</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'            </Classes>' +
-	'        </Style>' +
-	'        <Style Name=\"Header\">' +
-	'            <Properties>' +
-	'                <Property Name=\"BorderTop\">solid 1px #D8DFE7</Property>' +
-	'                <Property Name=\"BorderBottom\">solid 1px #323C47</Property>' +
-	'                <Property Name=\"BackgroundImage\">url(\'header.png\')</Property>' +
-	'            </Properties>' +
-	'        </Style>' +
-	'        <Style Name=\"Home Button\">' +
-	'            <Properties>' +
-	'                <Property Name=\"LabelWithNoneOption\">Home</Property>' +
-	'            </Properties>' +
-	'        </Style>' +
-	'        <Style Name=\"Navigation Element\">' +
-	'            <Classes>' +
-	'                <StyleClass Name=\"TOC - Home Page Row\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"LabelWithNoneOption\">Table of Contents</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Index - Home Page Row\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"LabelWithNoneOption\">Index</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Glossary - Home Page Row\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"LabelWithNoneOption\">Glossary</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Browse Sequence - Home Page Row\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"LabelWithNoneOption\">Browse Sequences</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"About - Home Page Row\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"LabelWithNoneOption\">About</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Index Page\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"SeeReference\">See</Property>' +
-	'                        <Property Name=\"SeeAlsoReference\">See also</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Search Results Page\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"NoResultsFoundString\">No results found.</Property>' +
-	'                        <Property Name=\"SearchErrorString\">There was an error during the search. Please try again.</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Index Heading\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'IndexHeadingBG.png\')</Property>' +
-	'                        <Property Name=\"Height\">23px</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Glossary Heading\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'IndexHeadingBG.png\')</Property>' +
-	'                        <Property Name=\"Height\">23px</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'            </Classes>' +
-	'        </Style>' +
-	'        <Style Name=\"Search Bar\">' +
-	'            <Properties>' +
-	'                <Property Name=\"BackgroundImage\">url(\'SearchBG.png\')</Property>' +
-	'            </Properties>' +
-	'        </Style>' +
-	'        <Style Name=\"Formats\">' +
-	'            <Properties>' +
-	'                <Property Name=\"CrossReferenceFormat\">See \"{paratext}\"</Property>' +
-	'                <Property Name=\"CrossReferencePrintFormat\">See \"{paratext}\" on page {page}</Property>' +
-	'                <Property Name=\"CrossReferenceBelow\">below</Property>' +
-	'                <Property Name=\"CrossReferenceAbove\">above</Property>' +
-	'                <Property Name=\"CrossReferenceOnPage\">on page </Property>' +
-	'                <Property Name=\"CrossReferenceOnPreviousPage\">on the previous page</Property>' +
-	'                <Property Name=\"CrossReferenceOnNextPage\">on the next page</Property>' +
-	'                <Property Name=\"CrossReferenceOnFacingPage\">on the facing page</Property>' +
-	'                <Property Name=\"BreadcrumbsYouAreHereText\">You are here: </Property>' +
-	'                <Property Name=\"KeywordLinkText\">Search Index</Property>' +
-	'                <Property Name=\"RelatedTopicsText\">Related Topics</Property>' +
-	'                <Property Name=\"ConceptLinkText\">See Also</Property>' +
-	'            </Properties>' +
-	'        </Style>' +
-	'        <Style Name=\"Relationships\">' +
-	'            <Classes>' +
-	'                <StyleClass Name=\"concept\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Concept Information</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"task\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Related Tasks</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"reference\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Reference Materials</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'            </Classes>' +
-	'        </Style>' +
-	'        <Style Name=\"FeedbackUserProfileItem\">' +
-	'            <Classes>' +
-	'                <StyleClass Name=\"MiddleName\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Middle Name</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Address1\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Address</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Address2\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Address2</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Address3\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Address3</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Address4\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Address4</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"City\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">City</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"State\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">State</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Phone1\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Home Phone</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Phone2\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Work Phone</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Phone3\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Mobile Phone</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Fax\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Fax</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Birthdate\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Birthdate</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Date\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Date</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Employer\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Employer</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Occupation\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Occupation</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Department\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Department</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Custom1\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Custom1</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Custom2\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Custom2</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Custom3\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Custom3</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Custom4\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Custom4</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Custom5\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Custom5</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Custom6\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Custom6</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Custom7\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Custom7</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Custom8\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Custom8</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Custom9\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Custom9</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"Custom10\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Custom10</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'            </Classes>' +
-	'        </Style>' +
-	'        <Style Name=\"Frame\">' +
-	'            <Classes>' +
-	'                <StyleClass Name=\"Toolbar\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'ToolbarBackground.jpg\')</Property>' +
-	'                        <Property Name=\"Height\">28px</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"TopicToolbar\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Height\">28px</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"NavigationTopDivider\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'NavigationTopGradient.jpg\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"NavigationDragHandle\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"BackgroundImage\">url(\'NavigationBottomGradient.jpg\')</Property>' +
-	'                        <Property Name=\"BackgroundImagePressed\">url(\'NavigationBottomGradient_selected.jpg\')</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"BodyComments\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"Label\">Comments</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'            </Classes>' +
-	'        </Style>' +
-	'        <Style Name=\"Dialog\">' +
-	'            <Classes>' +
-	'                <StyleClass Name=\"AddComment\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"CommentLengthExceeded\">The maximum comment length was exceeded by {n} characters.</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'                <StyleClass Name=\"ReplyComment\">' +
-	'                    <Properties>' +
-	'                        <Property Name=\"CommentLengthExceeded\">The maximum comment length was exceeded by {n} characters.</Property>' +
-	'                    </Properties>' +
-	'                </StyleClass>' +
-	'            </Classes>' +
-	'        </Style>' +
-	'    </Styles>' +
-	'    <Resources>' +
-	'    </Resources>' +
-	'    <ResourcesInfo>' +
-	'        <Resource Name=\"SelectTocO.png\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"SelectToc_overO.png\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"SelectToc_selectedO.png\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"SelectIndex.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"SelectIndex_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"SelectIndex_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"SelectSearch.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"SelectSearch_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"SelectSearch_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"AddTopicToFavorites.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"AddTopicToFavorites_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"AddTopicToFavorites_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"backg.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"Previous Mouse Over.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"Previous Selected.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"nextg.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"Next Mouse Over.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"Next Selected.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"Expand.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Expand_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Expand_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Collapse.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Collapse_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Collapse_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Print.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Print_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Print_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Highlight.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Highlight_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Highlight_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"BookO.png\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"IndexIcon.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"find.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"FavoritesIconO.png\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"BrowsesequencesIconO.png\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"GlossaryIcon.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"CommunityIcon.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"header.png\" Width=\"1\" Height=\"42\" />' +
-	'        <Resource Name=\"IndexHeadingBG.png\" Width=\"1\" Height=\"23\" />' +
-	'        <Resource Name=\"SearchBG.png\" Width=\"1\" Height=\"43\" />' +
-	'        <Resource Name=\"Topic.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"BookOpenO.png\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"ToolbarBackground.jpg\" Width=\"2\" Height=\"28\" />' +
-	'        <Resource Name=\"NavigationTopGradient.jpg\" Width=\"2\" Height=\"8\" />' +
-	'        <Resource Name=\"NavigationBottomGradient.jpg\" Width=\"2\" Height=\"7\" />' +
-	'        <Resource Name=\"NavigationBottomGradient_selected.jpg\" Width=\"2\" Height=\"7\" />' +
-	'        <Resource Name=\"Delete.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Delete_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Delete_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"AddComment.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"AddComment_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"AddComment_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"ReplyComment.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"ReplyComment_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"ReplyComment_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"RefreshTopicComments.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"RefreshTopicComments_selected.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"RefreshTopicComments_over.gif\" Width=\"23\" Height=\"22\" />' +
-	'        <Resource Name=\"Comment.gif\" Width=\"16\" Height=\"16\" />' +
-	'        <Resource Name=\"CommentReply.gif\" Width=\"16\" Height=\"16\" />' +
-	'    </ResourcesInfo>' +
-	'</Stylesheet>'
-);
+var xmlStylesheetData = "";
+xmlStylesheetData += '<?xml version=\"1.0\" encoding=\"utf-8\"?>';
+xmlStylesheetData += '<Stylesheet>';
+xmlStylesheetData += '    <Styles>';
+xmlStylesheetData += '        <Style Name=\"ToolbarItem\">';
+xmlStylesheetData += '            <Classes>';
+xmlStylesheetData += '                <StyleClass Name=\"Logo\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">none</Property>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">Logo</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"QuickSearch\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'find.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/QuickSearch_selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/QuickSearch_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">QuickSearch</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"AddTopicToFavorites\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">AddTopicToFavorites</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'AddTopicToFavorites.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'AddTopicToFavorites_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'AddTopicToFavorites_selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"Tooltip\">Add topic to favorites</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Back\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">Back</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'backg.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'Previous%20Mouse%20Over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'Previous%20Selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"Tooltip\">Back</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Forward\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">Forward</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'nextg.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'Next%20Mouse%20Over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'Next%20Selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"Tooltip\">Forward</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Print\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">Print</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'Print.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'Print_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'Print_selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"OnClick\">ExpandAll( \"open\" );PrintTopic();ExpandAll( \"close\" )</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"SelectTOC\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">SelectTOC</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'SelectTocO.png\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'SelectToc_overO.png\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'SelectToc_selectedO.png\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"AccordionTitle\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">AccordionTitle</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"ExpandAll\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">ExpandAll</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'Expand.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'Expand_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'Expand_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"CollapseAll\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">CollapseAll</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'Collapse.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'Collapse_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'Collapse_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"RemoveHighlight\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">RemoveHighlight</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'Highlight.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'Highlight_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'Highlight_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"ToggleNavigationPane\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/HideNavigation.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/HideNavigation_selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/HideNavigation_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"CheckedIcon\">url(\'resources:WebHelp/Default.flwht/Images/HideNavigation_checked.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">ToggleNavigationPane</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Home\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">Home</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/Home.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/Home_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/Home_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Stop\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">Stop</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/Stop.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/Stop_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/Stop_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Refresh\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">Refresh</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/Refresh.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/Refresh_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/Refresh_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"SelectIndex\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">SelectIndex</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'SelectIndex.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'SelectIndex_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'SelectIndex_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"SelectSearch\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">SelectSearch</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'SelectSearch.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'SelectSearch_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'SelectSearch_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"SelectFavorites\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">SelectFavorites</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/SelectFavorites.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectFavorites_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectFavorites_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"SelectGlossary\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">SelectGlossary</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/SelectGlossary.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectGlossary_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectGlossary_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"SelectBrowseSequence\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">SelectBrowseSequence</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/SelectBrowseSequences.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectBrowseSequences_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/SelectBrowseSequences_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"SelectCommunity\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">SelectCommunity</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/Community.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/Community_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/Community_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"TopicRatings\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"EmptyIcon\">url(\'resources:WebHelp/Default.flwht/Images/Rating0.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"FullIcon\">url(\'resources:WebHelp/Default.flwht/Images/RatingGold100.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"RatingSubmittedMessage\">Thank you for submitting your rating!</Property>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">TopicRatings</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"EditUserProfile\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">EditUserProfile</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/EditUserProfile.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/EditUserProfile_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/EditUserProfile_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"PreviousTopic\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">PreviousTopic</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/PreviousTopic.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/PreviousTopic_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/PreviousTopic_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"NextTopic\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">NextTopic</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'resources:WebHelp/Default.flwht/Images/NextTopic.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'resources:WebHelp/Default.flwht/Images/NextTopic_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'resources:WebHelp/Default.flwht/Images/NextTopic_selected.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"CurrentTopicIndex\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"PaddingLeft\">2px</Property>';
+xmlStylesheetData += '                        <Property Name=\"PaddingRight\">2px</Property>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Page {n} of {total}</Property>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">CurrentTopicIndex</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Separator\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ControlType\">Separator</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '            </Classes>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"AccordionItem\">';
+xmlStylesheetData += '            <Classes>';
+xmlStylesheetData += '                <StyleClass Name=\"TOC\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Table of Contents</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'BookO.png\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>';
+xmlStylesheetData += '                        <Property Name=\"ItemHeight\">28px</Property>';
+xmlStylesheetData += '                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Search\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Search</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'find.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>';
+xmlStylesheetData += '                        <Property Name=\"ItemHeight\">28px</Property>';
+xmlStylesheetData += '                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"BrowseSequence\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Browse Sequences</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'BrowsesequencesIconO.png\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"Color\">#00678a</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradient\">default</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>';
+xmlStylesheetData += '                        <Property Name=\"ItemHeight\">28px</Property>';
+xmlStylesheetData += '                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Favorites\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Favorites</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'FavoritesIconO.png\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>';
+xmlStylesheetData += '                        <Property Name=\"ItemHeight\">28px</Property>';
+xmlStylesheetData += '                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"IconTray\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"ItemHeight\">28px</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>';
+xmlStylesheetData += '                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Index\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Index</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'IndexIcon.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>';
+xmlStylesheetData += '                        <Property Name=\"ItemHeight\">28px</Property>';
+xmlStylesheetData += '                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Glossary\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Glossary</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'GlossaryIcon.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>';
+xmlStylesheetData += '                        <Property Name=\"ItemHeight\">28px</Property>';
+xmlStylesheetData += '                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Community\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Community</Property>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'CommunityIcon.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>';
+xmlStylesheetData += '                        <Property Name=\"ItemHeight\">28px</Property>';
+xmlStylesheetData += '                        <Property Name=\"BorderBottom\">solid 1px #00678a</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '            </Classes>';
+xmlStylesheetData += '            <Properties>';
+xmlStylesheetData += '                <Property Name=\"BackgroundGradient\">solid #fafafa White</Property>';
+xmlStylesheetData += '                <Property Name=\"BackgroundGradientHover\">solid #45788a #ffffff</Property>';
+xmlStylesheetData += '                <Property Name=\"ItemHeight\">28px</Property>';
+xmlStylesheetData += '                <Property Name=\"BorderBottom\">solid 1px #00678a</Property>';
+xmlStylesheetData += '            </Properties>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"TocEntry\">';
+xmlStylesheetData += '            <Properties>';
+xmlStylesheetData += '                <Property Name=\"Color\">#000000</Property>';
+xmlStylesheetData += '                <Property Name=\"TopicIcon\">url(\'Topic.gif\')</Property>';
+xmlStylesheetData += '                <Property Name=\"BookIcon\">url(\'BookO.png\')</Property>';
+xmlStylesheetData += '                <Property Name=\"BookOpenIcon\">url(\'BookOpenO.png\')</Property>';
+xmlStylesheetData += '            </Properties>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"Control\">';
+xmlStylesheetData += '            <Classes>';
+xmlStylesheetData += '                <StyleClass Name=\"AddSearchToFavoritesButton\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'AddTopicToFavorites.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'AddTopicToFavorites_selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'AddTopicToFavorites_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"Tooltip\">Add search string to favorites</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"TopicFavoritesDeleteButton\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'Delete.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'Delete_selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'Delete_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"Tooltip\">Delete selected favorite</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"SearchFavoritesDeleteButton\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'Delete.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'Delete_selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'Delete_over.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"Tooltip\">Delete selected favorite</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"SearchResults\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"TableSummary\">This table contains the results of the search that was performed. The first column indicates the search rank and the second column indicates the title of the topic that contains the search result.</Property>';
+xmlStylesheetData += '                        <Property Name=\"RankLabel\">Rank</Property>';
+xmlStylesheetData += '                        <Property Name=\"TitleLabel\">Title</Property>';
+xmlStylesheetData += '                        <Property Name=\"TopicResultsLabel\">Topic Results</Property>';
+xmlStylesheetData += '                        <Property Name=\"CommunityResultsLabel\">Community Results</Property>';
+xmlStylesheetData += '                        <Property Name=\"ShowAllCommunityResults\">Show all community results</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"CommentsAddButton\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'AddComment.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'AddComment_selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'AddComment_over.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"CommentsReplyButton\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'ReplyComment.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'ReplyComment_selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'ReplyComment_over.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"CommentsRefreshButton\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'RefreshTopicComments.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"PressedIcon\">url(\'RefreshTopicComments_selected.gif\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"HoverIcon\">url(\'RefreshTopicComments_over.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"CommentNode\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'Comment.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"CommentReplyNode\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Icon\">url(\'CommentReply.gif\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"NavigationLinkTop\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Open topic with navigation</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"NavigationLinkBottom\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Open topic with navigation</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '            </Classes>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"Header\">';
+xmlStylesheetData += '            <Properties>';
+xmlStylesheetData += '                <Property Name=\"BorderTop\">solid 1px #D8DFE7</Property>';
+xmlStylesheetData += '                <Property Name=\"BorderBottom\">solid 1px #323C47</Property>';
+xmlStylesheetData += '                <Property Name=\"BackgroundImage\">url(\'header.png\')</Property>';
+xmlStylesheetData += '            </Properties>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"Home Button\">';
+xmlStylesheetData += '            <Properties>';
+xmlStylesheetData += '                <Property Name=\"LabelWithNoneOption\">Home</Property>';
+xmlStylesheetData += '            </Properties>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"Navigation Element\">';
+xmlStylesheetData += '            <Classes>';
+xmlStylesheetData += '                <StyleClass Name=\"TOC - Home Page Row\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"LabelWithNoneOption\">Table of Contents</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Index - Home Page Row\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"LabelWithNoneOption\">Index</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Glossary - Home Page Row\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"LabelWithNoneOption\">Glossary</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Browse Sequence - Home Page Row\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"LabelWithNoneOption\">Browse Sequences</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"About - Home Page Row\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"LabelWithNoneOption\">About</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Index Page\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"SeeReference\">See</Property>';
+xmlStylesheetData += '                        <Property Name=\"SeeAlsoReference\">See also</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Search Results Page\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"NoResultsFoundString\">No results found.</Property>';
+xmlStylesheetData += '                        <Property Name=\"SearchErrorString\">There was an error during the search. Please try again.</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Index Heading\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundImage\">url(\'IndexHeadingBG.png\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"Height\">23px</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Glossary Heading\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundImage\">url(\'IndexHeadingBG.png\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"Height\">23px</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '            </Classes>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"Search Bar\">';
+xmlStylesheetData += '            <Properties>';
+xmlStylesheetData += '                <Property Name=\"BackgroundImage\">url(\'SearchBG.png\')</Property>';
+xmlStylesheetData += '            </Properties>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"Formats\">';
+xmlStylesheetData += '            <Properties>';
+xmlStylesheetData += '                <Property Name=\"CrossReferenceFormat\">See \"{paratext}\"</Property>';
+xmlStylesheetData += '                <Property Name=\"CrossReferencePrintFormat\">See \"{paratext}\" on page {page}</Property>';
+xmlStylesheetData += '                <Property Name=\"CrossReferenceBelow\">below</Property>';
+xmlStylesheetData += '                <Property Name=\"CrossReferenceAbove\">above</Property>';
+xmlStylesheetData += '                <Property Name=\"CrossReferenceOnPage\">on page </Property>';
+xmlStylesheetData += '                <Property Name=\"CrossReferenceOnPreviousPage\">on the previous page</Property>';
+xmlStylesheetData += '                <Property Name=\"CrossReferenceOnNextPage\">on the next page</Property>';
+xmlStylesheetData += '                <Property Name=\"CrossReferenceOnFacingPage\">on the facing page</Property>';
+xmlStylesheetData += '                <Property Name=\"BreadcrumbsYouAreHereText\">You are here: </Property>';
+xmlStylesheetData += '                <Property Name=\"KeywordLinkText\">Search Index</Property>';
+xmlStylesheetData += '                <Property Name=\"KeywordLinkIconAltText\">Keyword Link Icon</Property>';
+xmlStylesheetData += '                <Property Name=\"RelatedTopicsText\">Related Topics</Property>';
+xmlStylesheetData += '                <Property Name=\"RelatedTopicsIconAltText\">Related Topics Link Icon</Property>';
+xmlStylesheetData += '                <Property Name=\"ConceptLinkText\">See Also</Property>';
+xmlStylesheetData += '                <Property Name=\"ConceptLinkIconAltText\">Concept Link Icon</Property>';
+xmlStylesheetData += '                <Property Name=\"DropDownOpenAltText\">Open</Property>';
+xmlStylesheetData += '                <Property Name=\"DropDownClosedAltText\">Closed</Property>';
+xmlStylesheetData += '                <Property Name=\"ExpandingOpenAltText\">Open</Property>';
+xmlStylesheetData += '                <Property Name=\"ExpandingClosedAltText\">Closed</Property>';
+xmlStylesheetData += '                <Property Name=\"GlossaryTermOpenAltText\">Open</Property>';
+xmlStylesheetData += '                <Property Name=\"GlossaryTermClosedAltText\">Closed</Property>';
+xmlStylesheetData += '                <Property Name=\"TogglerOpenAltText\">Open</Property>';
+xmlStylesheetData += '                <Property Name=\"TogglerClosedAltText\">Closed</Property>';
+xmlStylesheetData += '            </Properties>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"Relationships\">';
+xmlStylesheetData += '            <Classes>';
+xmlStylesheetData += '                <StyleClass Name=\"concept\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Concept Information</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"task\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Related Tasks</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"reference\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Reference Materials</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '            </Classes>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"FeedbackUserProfileItem\">';
+xmlStylesheetData += '            <Classes>';
+xmlStylesheetData += '                <StyleClass Name=\"MiddleName\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Middle Name</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Address1\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Address</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Address2\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Address2</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Address3\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Address3</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Address4\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Address4</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"City\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">City</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"State\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">State</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Phone1\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Home Phone</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Phone2\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Work Phone</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Phone3\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Mobile Phone</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Fax\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Fax</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Birthdate\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Birthdate</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Date\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Date</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Employer\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Employer</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Occupation\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Occupation</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Department\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Department</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Custom1\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Custom1</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Custom2\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Custom2</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Custom3\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Custom3</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Custom4\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Custom4</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Custom5\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Custom5</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Custom6\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Custom6</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Custom7\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Custom7</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Custom8\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Custom8</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Custom9\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Custom9</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"Custom10\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Custom10</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '            </Classes>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"Frame\">';
+xmlStylesheetData += '            <Classes>';
+xmlStylesheetData += '                <StyleClass Name=\"Toolbar\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundImage\">url(\'ToolbarBackground.jpg\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"Scrolling\">no</Property>';
+xmlStylesheetData += '                        <Property Name=\"Height\">28px</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"TopicToolbar\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Height\">28px</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"NavigationTopDivider\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundImage\">url(\'NavigationTopGradient.jpg\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"NavigationDragHandle\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundImage\">url(\'NavigationBottomGradient.jpg\')</Property>';
+xmlStylesheetData += '                        <Property Name=\"BackgroundImagePressed\">url(\'NavigationBottomGradient_selected.jpg\')</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"BodyComments\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"Label\">Comments</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '            </Classes>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '        <Style Name=\"Dialog\">';
+xmlStylesheetData += '            <Classes>';
+xmlStylesheetData += '                <StyleClass Name=\"AddComment\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"CommentLengthExceeded\">The maximum comment length was exceeded by {n} characters.</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '                <StyleClass Name=\"ReplyComment\">';
+xmlStylesheetData += '                    <Properties>';
+xmlStylesheetData += '                        <Property Name=\"CommentLengthExceeded\">The maximum comment length was exceeded by {n} characters.</Property>';
+xmlStylesheetData += '                    </Properties>';
+xmlStylesheetData += '                </StyleClass>';
+xmlStylesheetData += '            </Classes>';
+xmlStylesheetData += '        </Style>';
+xmlStylesheetData += '    </Styles>';
+xmlStylesheetData += '    <Resources>';
+xmlStylesheetData += '    </Resources>';
+xmlStylesheetData += '    <ResourcesInfo>';
+xmlStylesheetData += '        <Resource Name=\"SelectTocO.png\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"SelectToc_overO.png\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"SelectToc_selectedO.png\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"SelectIndex.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"SelectIndex_over.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"SelectIndex_selected.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"SelectSearch.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"SelectSearch_over.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"SelectSearch_selected.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"AddTopicToFavorites.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"AddTopicToFavorites_over.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"AddTopicToFavorites_selected.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"backg.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"Previous Mouse Over.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"Previous Selected.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"nextg.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"Next Mouse Over.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"Next Selected.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"Expand.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Expand_over.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Expand_selected.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Collapse.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Collapse_over.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Collapse_selected.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Print.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Print_over.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Print_selected.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Highlight.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Highlight_over.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Highlight_selected.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"BookO.png\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"IndexIcon.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"find.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"FavoritesIconO.png\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"BrowsesequencesIconO.png\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"GlossaryIcon.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"CommunityIcon.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"header.png\" Width=\"1\" Height=\"42\" />';
+xmlStylesheetData += '        <Resource Name=\"IndexHeadingBG.png\" Width=\"1\" Height=\"23\" />';
+xmlStylesheetData += '        <Resource Name=\"SearchBG.png\" Width=\"1\" Height=\"43\" />';
+xmlStylesheetData += '        <Resource Name=\"Topic.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"BookOpenO.png\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"ToolbarBackground.jpg\" Width=\"2\" Height=\"28\" />';
+xmlStylesheetData += '        <Resource Name=\"NavigationTopGradient.jpg\" Width=\"2\" Height=\"8\" />';
+xmlStylesheetData += '        <Resource Name=\"NavigationBottomGradient.jpg\" Width=\"2\" Height=\"7\" />';
+xmlStylesheetData += '        <Resource Name=\"NavigationBottomGradient_selected.jpg\" Width=\"2\" Height=\"7\" />';
+xmlStylesheetData += '        <Resource Name=\"Delete.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Delete_selected.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Delete_over.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"AddComment.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"AddComment_selected.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"AddComment_over.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"ReplyComment.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"ReplyComment_selected.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"ReplyComment_over.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"RefreshTopicComments.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"RefreshTopicComments_selected.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"RefreshTopicComments_over.gif\" Width=\"23\" Height=\"22\" />';
+xmlStylesheetData += '        <Resource Name=\"Comment.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '        <Resource Name=\"CommentReply.gif\" Width=\"16\" Height=\"16\" />';
+xmlStylesheetData += '    </ResourcesInfo>';
+xmlStylesheetData += '</Stylesheet>';
+CMCXmlParser._FilePathToXmlStringMap.Add('Stylesheet', xmlStylesheetData);
