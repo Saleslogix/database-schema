@@ -61,13 +61,97 @@
         <loc>http://saleslogix.github.io/database/Content/image/SelectToc_selectedO.png</loc>
     </url>
     <url>
-        <loc>http://saleslogix.github.io/database/Content/Resources/Stylesheets/SALESLOGIX.CSS</loc>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/03000002.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/alarm.gif</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/ChapterNumberBox.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/checkbox.bmp</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/Help.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/Help_25x25.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/Infor Red.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/ManualCover_Background.jpg</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/ManualCover_BackgroundSage.jpg</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/sagegreenonwhite_small.jpg</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/SageProduct_Stacked_White.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Images/saleslogixIcon32x32.png</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Stylesheets/Infor.CSS</loc>
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Content/Resources/MasterPages/NoFooter.flmsp</loc>
     </url>
     <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Stylesheets/SALESLOGIX.CSS</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Stylesheets/SalesLogixWPprint.css</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Stylesheets/SALESLOGIX_101.CSS</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Stylesheets/SLXprint.css</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/TableStyles/Borders.css</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/TableStyles/FMTableStyle.css</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/TableStyles/NoteTableStyle.css</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/TableStyles/SLX_TableStyle.css</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/TableStyles/Tab Table.css</loc>
+    </url>
+    <url>
         <loc>http://saleslogix.github.io/database/Content/Resources/TableStyles/TableStyle.css</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/TableStyles/TableStyle8.1.css</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/TableStyles/TableStyleBlue.css</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources/TableStyles/TableStyleSwift.css</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources2/Stylesheets/Infor.CSS</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources2/MasterPages/NoFooter.flmsp</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources2/Stylesheets/SALESLOGIX.CSS</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/Resources2/TableStyles/TableStyle.css</loc>
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Content/SalesLogix_Database_Help_System.htm</loc>
@@ -79,7 +163,7 @@
         <loc>http://saleslogix.github.io/database/Content/Common_Topics/using_the_help_system.htm</loc>
     </url>
     <url>
-        <loc>http://saleslogix.github.io/database/Content/Common_Topics/contacting_saleslogix.htm</loc>
+        <loc>http://saleslogix.github.io/database/Content/Resources/Common Topics/FrontMatter.htm</loc>
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Content/Common_Topics/Related_Documentation.htm</loc>
@@ -202,6 +286,9 @@
         <loc>http://saleslogix.github.io/database/Content/C_Tables/CONTACT_Table.htm</loc>
     </url>
     <url>
+        <loc>http://saleslogix.github.io/database/Content/C_Tables/CONTACTAUDIT.htm</loc>
+    </url>
+    <url>
         <loc>http://saleslogix.github.io/database/Content/C_Tables/CONTACT_LEADSOURCE_Table.htm</loc>
     </url>
     <url>
@@ -304,6 +391,9 @@
         <loc>http://saleslogix.github.io/database/Content/G_Tables/GM_PROFILE_Table.htm</loc>
     </url>
     <url>
+        <loc>http://saleslogix.github.io/database/Content/G_Tables/GROUPSTATS.htm</loc>
+    </url>
+    <url>
         <loc>http://saleslogix.github.io/database/Content/H_Tables/HIST_LEAD.htm</loc>
     </url>
     <url>
@@ -332,6 +422,9 @@
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Content/H_Tables/HISTORYATTENDEE.htm</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Content/I_Tables/IMPORTCONFIGURATION.htm</loc>
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Content/I_Tables/IMPORTHISTORY_Table.htm</loc>
@@ -838,6 +931,9 @@
         <loc>http://saleslogix.github.io/database/Content/U_Tables/USER_ACTIVITY_Table.htm</loc>
     </url>
     <url>
+        <loc>http://saleslogix.github.io/database/Content/U_Tables/USERAUDIT.htm</loc>
+    </url>
+    <url>
         <loc>http://saleslogix.github.io/database/Content/U_Tables/USEROAUTHTOKEN_Table.htm</loc>
     </url>
     <url>
@@ -929,6 +1025,9 @@
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Content/Triggers/Vector_Clock.htm</loc>
+    </url>
+    <url>
+        <loc>http://saleslogix.github.io/database/Skin/Blank.htm</loc>
     </url>
     <url>
         <loc>http://saleslogix.github.io/database/Skin/Blank.htm</loc>

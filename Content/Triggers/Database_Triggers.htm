@@ -3,9 +3,11 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Understanding Tables and Fields" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Understanding Database Triggers</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Understanding Database Triggers</title>
         <link href="../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
-        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/Infor.CSS" rel="stylesheet" type="text/css" />
         <script src="../SkinSupport/jquery.min.js" type="text/javascript">
         </script>
         <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
@@ -14,10 +16,10 @@
         </script>
     </head>
     <body>
-        <h1><a name="kanchor15"></a>Understanding Database Triggers</h1>
+        <h1><a name="kanchor10"></a>Understanding Database Triggers</h1>
         <p class="Infinitive">Added in Version 8.1</p>
         <p>Database triggers are designed to improve performance and capture all database changes regardless of where the change occurred. This means that changes made during a batch update will capture the change for each record that was updated. Database trigger information is stored in the DB_OBJECTDEFINITION table so that the triggers are sent out to remote databases during  synchronization.</p>
-        <p>In <span class="MyVariablesCompanyNameFull">Saleslogix</span> version 8.1, the CONTACTSYNCTRIGGER Provider trigger was removed from the <a href="../S_Tables/SLXTRIGGERS_Table.htm">SLXTRIGGERS table</a> and replaced with multiple database triggers. Additional database triggers were added for integrations introduced in version 8.1 and later.</p>
+        <p>In <span class="MyVariablesCompanyNameFull">Infor</span> version 8.1, the CONTACTSYNCTRIGGER Provider trigger was removed from the <a href="../S_Tables/SLXTRIGGERS_Table.htm">SLXTRIGGERS table</a> and replaced with multiple database triggers. Additional database triggers were added for integrations introduced in version 8.1 and later.</p>
         <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="97%">
             <col style="width: 8.248%;" />
             <col style="width: 91.752%;" />
@@ -32,360 +34,336 @@
         </table>
         <p class="subheading">SQL</p>
         <table style="width: 100%;margin-left: 0;margin-right: auto;caption-side: top;mc-table-style: url('../Resources/TableStyles/TableStyle.css');" class="TableStyle-TableStyle" cellspacing="0">
-            <col style="width: 291px;" class="Column-Column1" />
-            <col style="width: 67px;" class="Column-Column1" />
-            <col style="width: 95px;" class="Column-Column1" />
-            <col style="width: 111px;" class="Column-Column1" />
-            <col class="Column-Column1" />
+            <col style="width: 291px;" class="TableStyle-TableStyle-Column-Column1" />
+            <col style="width: 67px;" class="TableStyle-TableStyle-Column-Column1" />
+            <col style="width: 95px;" class="TableStyle-TableStyle-Column-Column1" />
+            <col style="width: 111px;" class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
             <thead>
-                <tr class="Head-Header1">
-                    <th class="HeadE-Column1-Header1">Trigger</th>
-                    <th class="HeadE-Column1-Header1">Version Added</th>
-                    <th class="HeadE-Column1-Header1">Version Edited</th>
-                    <th class="HeadE-Column1-Header1">Version Removed</th>
-                    <th class="HeadD-Column1-Header1">Description</th>
+                <tr class="TableStyle-TableStyle-Head-Header1">
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Trigger</th>
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Version Added</th>
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Version Edited</th>
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Version Removed</th>
+                    <th class="TableStyle-TableStyle-HeadD-Column1-Header1">Description</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACCOUNT_INTEGRATION_CHANGE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">
-                        <p><a href="Vector_Clock.htm"><a href="Vector_Clock.htm">Records vector clock information</a></a>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACCOUNT_INTEGRATION_CHANGE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p><a href="Vector_Clock.htm">(missing or bad snippet)</a>
                         </p>
                         <p>Updates <a href="../E_Tables/ERPEMAILADDRESS_Table.htm">ERPEMAILADDRESS</a> and <a href="../E_Tables/ERPPHONENUMBER_Table.htm">ERPPHONENUMBER</a> tables if phones/emails have changed.</p>
                     </td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACCOUNT_INTEGRATION_INSERT</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">
-                        <p><a href="Vector_Clock.htm">Records vector clock information</a>
-                        </p>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACCOUNT_INTEGRATION_INSERT</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p>(missing or bad snippet)</p>
                         <p>  Updates <a href="../E_Tables/ERPEMAILADDRESS_Table.htm">ERPEMAILADDRESS</a> and <a href="../E_Tables/ERPPHONENUMBER_Table.htm">ERPPHONENUMBER</a>tables if phones/emails have a value.</p>
                     </td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACCOUNT_TOMBSTONE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Records the deletion of the account record to the<a href="../G_Tables/GLOBALCHANGETRACKING.htm">GLOBALCHANGETRACKING</a> table. (Currently for Account Integration only).</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACCOUNT_TOMBSTONE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Records the deletion of the account record to the<a href="../G_Tables/GLOBALCHANGETRACKING.htm">GLOBALCHANGETRACKING</a> table. (Currently for Account Integration only).</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTIVITY_INT_INSTEAD_INS</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Presets the GLOBALSYNCID when the value is null.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTIVITY_INT_INSTEAD_INS</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Presets the GLOBALSYNCID when the value is null.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTIVITY_INTEGRATION_CHANGE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTIVITY_INTEGRATION_CHANGE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTIVITY_INTEGRATION_INSERT</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">
-                        <p><a href="Vector_Clock.htm">Records vector clock information</a>
-                        </p>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTIVITY_INTEGRATION_INSERT</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p>(missing or bad snippet)</p>
                         <p>This information was previously included in the ACTIVITY_INTEGRATION_CHANGE trigger. A separate trigger was created for insert information in order to improve performance.</p>
                     </td>
                 </tr>
-                <tr class="Body-Body1" MadCap:conditions="">
-                    <td class="BodyE-Column1-Body1" style="background-color: #f5f5f5;">ACTIVITY_TOMBSTONE</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #f5f5f5;">8.1</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #f5f5f5;">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #f5f5f5;">8.1.0.02</td>
-                    <td class="BodyD-Column1-Body1" style="background-color: #f5f5f5;">This trigger was removed in 8.1.0.02. It is still listed in the bundle, but only to remove the trigger if it exists in the database.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="background-color: #f5f5f5;">ACTIVITY_TOMBSTONE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="background-color: #f5f5f5;">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="background-color: #f5f5f5;">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="background-color: #f5f5f5;">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="background-color: #f5f5f5;">This trigger was removed in 8.1.0.02. It is still listed in the bundle, but only to remove the trigger if it exists in the database.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTIVITYATTENDEE_COUNT</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTIVITYATTENDEE_COUNT</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
                         <p>Updates the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY</a> table ATTENDEECOUNT field for any insert or delete. </p>
                         <p>This trigger is not associated with Integrations.</p>
                     </td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTIVITYATTENDEE_INT_INSTEAD_INS</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Presets the GLOBALSYNCID when the value is null.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTIVITYATTENDEE_INT_INSTEAD_INS</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Presets the GLOBALSYNCID when the value is null.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTIVITYATTENDEE_INTEGRATION_CHANGE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTIVITYATTENDEE_INTEGRATION_CHANGE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ADDRESS_INTEGRATION_CHANGE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ADDRESS_INTEGRATION_CHANGE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ADHOCGROUP_INTEGRATION_INSERT</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Captures changes to the contact sync ad hoc group for Integrations.  Only tracks contact additions for the specific user.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ADHOCGROUP_INTEGRATION_INSERT</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Captures changes to the contact sync ad hoc group for Integrations.  Only tracks contact additions for the specific user.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ADHOCGROUP_INTEGRATION_TOMBSTONE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Records  contacts removed from the ad hoc group as deletions for that user in the <a href="../G_Tables/GLOBALCHANGETRACKING.htm">GLOBALCHANGETRACKING</a> table.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ADHOCGROUP_INTEGRATION_TOMBSTONE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Records  contacts removed from the ad hoc group as deletions for that user in the <a href="../G_Tables/GLOBALCHANGETRACKING.htm">GLOBALCHANGETRACKING</a> table.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">CONTACT_INTEGRATION_CHANGE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">CONTACT_INTEGRATION_CHANGE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">CONTACT_INTEGRATION_INSERT</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                        <p>Updates <a href="../E_Tables/ERPEMAILADDRESS_Table.htm">ERPEMAILADDRESS</a> and <a href="../E_Tables/ERPPHONENUMBER_Table.htm">ERPPHONENUMBER</a> tables if phones/emails have a value.</p>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">CONTACT_INTEGRATION_INSERT</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)<p>Updates <a href="../E_Tables/ERPEMAILADDRESS_Table.htm">ERPEMAILADDRESS</a> and <a href="../E_Tables/ERPPHONENUMBER_Table.htm">ERPPHONENUMBER</a> tables if phones/emails have a value.</p></td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">CONTACT_TOMBSTONE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">CONTACT_TOMBSTONE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">USERACTIVITY_INTEGRATION_CHANGE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">USERACTIVITY_INTEGRATION_CHANGE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyB-Column1-Body1">USERACTIVITY_INT_INSTEAD_INS</td>
-                    <td class="BodyB-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyB-Column1-Body1">&#160;</td>
-                    <td class="BodyB-Column1-Body1">&#160;</td>
-                    <td class="BodyA-Column1-Body1">Presets the GLOBALSYNCID when the value is null.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1">USERACTIVITY_INT_INSTEAD_INS</td>
+                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyA-Column1-Body1">Presets the GLOBALSYNCID when the value is null.</td>
                 </tr>
             </tbody>
         </table>
         <p class="subheading">Oracle</p>
         <table style="width: 100%;margin-left: 0;margin-right: auto;caption-side: top;mc-table-style: url('../Resources/TableStyles/TableStyle.css');" class="TableStyle-TableStyle" cellspacing="0">
-            <col style="width: 291px;" class="Column-Column1" />
-            <col style="width: 94px;" class="Column-Column1" />
-            <col style="width: 95px;" class="Column-Column1" />
-            <col style="width: 112px;" class="Column-Column1" />
-            <col class="Column-Column1" />
+            <col style="width: 291px;" class="TableStyle-TableStyle-Column-Column1" />
+            <col style="width: 94px;" class="TableStyle-TableStyle-Column-Column1" />
+            <col style="width: 95px;" class="TableStyle-TableStyle-Column-Column1" />
+            <col style="width: 112px;" class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
             <thead>
-                <tr class="Head-Header1">
-                    <th class="HeadE-Column1-Header1">Trigger</th>
-                    <th class="HeadE-Column1-Header1">Version Added</th>
-                    <th class="HeadE-Column1-Header1">Version Edited</th>
-                    <th class="HeadE-Column1-Header1">Version Removed</th>
-                    <th class="HeadD-Column1-Header1">Table</th>
+                <tr class="TableStyle-TableStyle-Head-Header1">
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Trigger</th>
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Version Added</th>
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Version Edited</th>
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Version Removed</th>
+                    <th class="TableStyle-TableStyle-HeadD-Column1-Header1">Table</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACCOUNT_AFTER_CHANGES</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Updates <a href="../E_Tables/ERPEMAILADDRESS_Table.htm">ERPEMAILADDRESS</a> and <a href="../E_Tables/ERPPHONENUMBER_Table.htm">ERPPHONENUMBER</a> tables if phones/emails have changed.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACCOUNT_AFTER_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Updates <a href="../E_Tables/ERPEMAILADDRESS_Table.htm">ERPEMAILADDRESS</a> and <a href="../E_Tables/ERPPHONENUMBER_Table.htm">ERPPHONENUMBER</a> tables if phones/emails have changed.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACCOUNT_AFTER_DELETE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACCOUNT_AFTER_DELETE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACCOUNT_BEFORE_CHANGES</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                        <p>Assigns a unique GLOABALSYNCID (UUID) if null.</p>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACCOUNT_BEFORE_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)<p>Assigns a unique GLOABALSYNCID (UUID) if null.</p></td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTATTENDEE_AFTER_CHANGES</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Updates the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY</a> table ATTENDEECOUNT field for any updated record.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTATTENDEE_AFTER_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Updates the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY</a> table ATTENDEECOUNT field for any updated record.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTATTENDEE_AFTER_DELETE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Updates the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY</a> table ATTENDEECOUNT field for any deleted record. </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTATTENDEE_AFTER_DELETE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Updates the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY</a> table ATTENDEECOUNT field for any deleted record. </td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTATTENDEE_AFTER_INSERT</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Updates the Updates the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY</a> table ATTENDEECOUNT field for any inserted record.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTATTENDEE_AFTER_INSERT</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Updates the Updates the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY</a> table ATTENDEECOUNT field for any inserted record.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTATTENDEE_BEFORE_CHANGES</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                        <p>Assigns a unique GLOABALSYNCID (UUID) if null.</p>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTATTENDEE_BEFORE_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)<p>Assigns a unique GLOABALSYNCID (UUID) if null.</p></td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTIVITY_AFTER_CHANGES</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Updates the APPID and TICK for record in the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY</a> table.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTIVITY_AFTER_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Updates the APPID and TICK for record in the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY</a> table.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1" style="background-color: #f5f5f5;">ACTIVITY_AFTER_DELETE</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #f5f5f5;">8.1</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #f5f5f5;">&#160;</td>
-                    <td class="BodyE-Column1-Body1" style="background-color: #f5f5f5;">8.1.0.02</td>
-                    <td class="BodyD-Column1-Body1" style="background-color: #f5f5f5;">This trigger was removed in 8.1.0.02. It is still listed in the bundle, but only to remove the trigger if it exists in the database.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="background-color: #f5f5f5;">ACTIVITY_AFTER_DELETE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="background-color: #f5f5f5;">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="background-color: #f5f5f5;">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="background-color: #f5f5f5;">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="background-color: #f5f5f5;">This trigger was removed in 8.1.0.02. It is still listed in the bundle, but only to remove the trigger if it exists in the database.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ACTIVITY_BEFORE_CHANGES</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                        <p>Assigns a unique GLOABALSYNCID (UUID) if null.</p>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ACTIVITY_BEFORE_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)<p>Assigns a unique GLOABALSYNCID (UUID) if null.</p></td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ADDRESS_AFTER_CHANGES</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Updates the associated <a href="../C_Tables/CONTACT_Table.htm">CONTACT</a>&#160;or <a href="../A_Tables/ACCOUNT_Table.htm">ACCOUNT</a> table for any updated record. </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ADDRESS_AFTER_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Updates the associated <a href="../C_Tables/CONTACT_Table.htm">CONTACT</a>&#160;or <a href="../A_Tables/ACCOUNT_Table.htm">ACCOUNT</a> table for any updated record. </td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ADDRESS_BEFORE_CHANGES</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                        <p>Assigns a unique GLOABALSYNCID (UUID) if null.</p>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ADDRESS_BEFORE_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)<p>Assigns a unique GLOABALSYNCID (UUID) if null.</p></td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ADHOCGROUP_AFTER_DELETE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Records  contacts removed from the ad hoc group as deletions for that user in the <a href="../G_Tables/GLOBALCHANGETRACKING.htm">GLOBACHANGETRACKING</a> table.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ADHOCGROUP_AFTER_DELETE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Records  contacts removed from the ad hoc group as deletions for that user in the <a href="../G_Tables/GLOBALCHANGETRACKING.htm">GLOBACHANGETRACKING</a> table.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">ADHOCGROUP_AFTER_INSERT</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Captures changes to the contact sync ad hoc group for Integrations.  Only tracks contact additions for the specific user.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">ADHOCGROUP_AFTER_INSERT</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Captures changes to the contact sync ad hoc group for Integrations.  Only tracks contact additions for the specific user.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
                         <p>CHANGETRACKING_BEFORE_INS</p>
                     </td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Inserts an IDENTITY column in the <a href="../G_Tables/GLOBALCHANGETRACKING.htm">GLOBALCHANGETRACKING</a> table.</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Inserts an IDENTITY column in the <a href="../G_Tables/GLOBALCHANGETRACKING.htm">GLOBALCHANGETRACKING</a> table.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">CONTACT_AFTER_CHANGES</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Updates <a href="../E_Tables/ERPEMAILADDRESS_Table.htm">ERPEMAILADDRESS</a> and <a href="../E_Tables/ERPPHONENUMBER_Table.htm">ERPPHONENUMBER</a> tables if phones/emails have changed.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">CONTACT_AFTER_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Updates <a href="../E_Tables/ERPEMAILADDRESS_Table.htm">ERPEMAILADDRESS</a> and <a href="../E_Tables/ERPPHONENUMBER_Table.htm">ERPPHONENUMBER</a> tables if phones/emails have changed.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">CONTACT_AFTER_DELETE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">CONTACT_AFTER_DELETE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">CONTACT_BEFORE_CHANGES</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                        <p>Assigns a unique GLOBALSYNCID (UUID) if null.</p>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">CONTACT_BEFORE_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">(missing or bad snippet)<p>Assigns a unique GLOBALSYNCID (UUID) if null.</p></td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
                         <p>GLOBALCHANGETRACKING_TICK_SEC</p>
                     </td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Creates a Sequence fot ythe <a href="../G_Tables/GLOBALCHANGETRACKING.htm">GLOBALCHANGETRACKING</a> table.</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Creates a Sequence fot ythe <a href="../G_Tables/GLOBALCHANGETRACKING.htm">GLOBALCHANGETRACKING</a> table.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">USERACTIVITY_AFTER_CHANGES</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Updates the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY </a> table for any deleted record. </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">USERACTIVITY_AFTER_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Updates the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY </a> table for any deleted record. </td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyE-Column1-Body1">USERACTIVITY_AFTER_DELETE</td>
-                    <td class="BodyE-Column1-Body1">8.1</td>
-                    <td class="BodyE-Column1-Body1">8.1.0.03</td>
-                    <td class="BodyE-Column1-Body1">&#160;</td>
-                    <td class="BodyD-Column1-Body1">Updates the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY</a> table for any deleted record.</td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">USERACTIVITY_AFTER_DELETE</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1.0.03</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Updates the <a href="../A_Tables/ACTIVITY_Table.htm">ACTIVITY</a> table for any deleted record.</td>
                 </tr>
-                <tr class="Body-Body1">
-                    <td class="BodyB-Column1-Body1">USERACTIVITY_BEFORE_CHANGES</td>
-                    <td class="BodyB-Column1-Body1">8.1</td>
-                    <td class="BodyB-Column1-Body1">8.1.0.02</td>
-                    <td class="BodyB-Column1-Body1">&#160;</td>
-                    <td class="BodyA-Column1-Body1"><a href="Vector_Clock.htm">Records vector clock information</a>
-                        <p>Assigns a unique GLOABALSYNCID (UUID) if null.</p>
-                    </td>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1">USERACTIVITY_BEFORE_CHANGES</td>
+                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1">8.1</td>
+                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1">8.1.0.02</td>
+                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyA-Column1-Body1">(missing or bad snippet)<p>Assigns a unique GLOABALSYNCID (UUID) if null.</p></td>
                 </tr>
             </tbody>
         </table>

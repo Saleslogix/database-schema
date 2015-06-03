@@ -1,12 +1,12 @@
 /*<meta />*/
 
-/*
-// {{MadCap}} //////////////////////////////////////////////////////////////////
-// Copyright: MadCap Software, Inc - www.madcapsoftware.com ////////////////////
-////////////////////////////////////////////////////////////////////////////////
-// <version>10.0.0.0</version>
-////////////////////////////////////////////////////////////////////////////////
-*/
+/*!
+ * Copyright MadCap Software
+ * http://www.madcapsoftware.com/
+ * Unlicensed use is strictly prohibited
+ *
+ * v11.0.0.0
+ */
 
 .MCDropDown
 {
@@ -321,25 +321,72 @@ p.MCWebHelpFramesetLink
 	display: none;
 }
 
+a._0
+{
+	color: #007dbe;
+}
+
+a._0:link
+{
+	font-family: inherit;
+	font-weight: normal;
+	font-size: inherit;
+	padding: 0px;
+	text-decoration: none;
+	border-color: #cccccc;
+	color: #007dbe;
+	border-bottom: none 1px;
+}
+
+a._0:visited
+{
+	font-family: inherit;
+	font-weight: normal;
+	font-size: inherit;
+	padding: 0px;
+	text-decoration: none;
+	border-color: #cccccc;
+	color: #a352cc;
+	border-bottom: none 1px;
+}
+
+a._0:focus
+{
+	color: #007dbe;
+	outline: thin dotted invert;
+}
+
+a._0:hover
+{
+	font-family: inherit;
+	font-weight: normal;
+	font-size: inherit;
+	padding: 0px;
+	text-decoration: none;
+	border-color: #cccccc;
+	color: #007dbe;
+	border-bottom: none 1px;
+}
+
 a.MCToggler_0
 {
 	text-decoration: none;
 	margin-top: 3pt;
-	color: #0000ff;
+	color: #007dbe;
 }
 
 a.MCToggler_0:link
 {
 	text-decoration: none;
 	margin-top: 3pt;
-	color: #0000ff;
+	color: #007dbe;
 }
 
 a.MCToggler_0:visited
 {
 	text-decoration: none;
 	margin-top: 3pt;
-	color: #0000ff;
+	color: #007dbe;
 }
 
 a.MCToggler_0:focus
@@ -352,16 +399,58 @@ a.MCToggler_0:hover
 	
 }
 
-div.MCDropDown_0
+a.MCPopupSpot_0
 {
-	color: #0000ff;
+	color: #007dbe;
+}
+
+a.MCPopupSpot_0:link
+{
+	font-family: inherit;
+	font-weight: normal;
+	font-size: inherit;
+	padding: 0px;
+	text-decoration: none;
+	border-color: #cccccc;
+	color: #007dbe;
+	border-bottom: none 1px;
+}
+
+a.MCPopupSpot_0:visited
+{
+	font-family: inherit;
+	font-weight: normal;
+	font-size: inherit;
+	padding: 0px;
+	text-decoration: none;
+	border-color: #cccccc;
+	color: #a352cc;
+	border-bottom: none 1px;
+}
+
+a.MCPopupSpot_0:focus
+{
+	color: #007dbe;
+	outline: thin dotted invert;
+}
+
+a.MCPopupSpot_0:hover
+{
+	font-family: inherit;
+	font-weight: normal;
+	font-size: inherit;
+	padding: 0px;
+	text-decoration: none;
+	border-color: #cccccc;
+	color: #007dbe;
+	border-bottom: none 1px;
 }
 
 a.MCDropDownHotSpot_0
 {
 	font-color: #008b8b;
 	font-size: inherit;
-	color: #0000ff;
+	color: #007dbe;
 	text-decoration: none;
 }
 
@@ -369,7 +458,7 @@ a.MCDropDownHotSpot_0:link
 {
 	font-color: #008b8b;
 	font-size: inherit;
-	color: #0000ff;
+	color: #007dbe;
 	text-decoration: none;
 }
 
@@ -377,7 +466,7 @@ a.MCDropDownHotSpot_0:visited
 {
 	font-color: #008b8b;
 	font-size: inherit;
-	color: #0000ff;
+	color: #007dbe;
 	text-decoration: none;
 }
 
@@ -394,7 +483,7 @@ a.MCDropDownHotSpot_0:hover
 div.MCDropDownHead_0
 {
 	margin-top: 3pt;
-	color: #0000ff;
+	color: #007dbe;
 	text-decoration: none;
 }
 

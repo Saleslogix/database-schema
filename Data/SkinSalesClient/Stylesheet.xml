@@ -454,8 +454,8 @@
         </Style>
         <Style Name="Formats">
             <Properties>
-                <Property Name="CrossReferenceFormat">See "{paratext}"</Property>
-                <Property Name="CrossReferencePrintFormat">See "{paratext}" on page {page}</Property>
+                <Property Name="CrossReferenceFormat">{paratext}</Property>
+                <Property Name="CrossReferencePrintFormat">"{paratext}" {pageref}</Property>
                 <Property Name="CrossReferenceBelow">below</Property>
                 <Property Name="CrossReferenceAbove">above</Property>
                 <Property Name="CrossReferenceOnPage">on page </Property>

@@ -4,9 +4,9 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" />
-        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Disabling and Enabling Database Triggers</title>
-        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Disabling and Enabling Database Triggers</title>
+        <link href="../Resources/Stylesheets/Infor.CSS" rel="stylesheet" type="text/css" />
         <script src="../SkinSupport/jquery.min.js" type="text/javascript">
         </script>
         <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
@@ -15,18 +15,18 @@
         </script>
     </head>
     <body>
-        <h1><a name="kanchor291"></a>Disabling and Enabling Database Triggers</h1>
+        <h1><a name="kanchor287"></a>Disabling and Enabling Database Triggers</h1>
         <p>For performance reasons, you may want to disable database triggers in certain instances:</p>
         <ul>
             <li value="1">If your implementation does not include any integrations (Outlook sync, Google Sync, or X3) </li>
-            <li value="2">If your implementation includes one or more integrations and you need to perform a large import or large batch updates that do not involve data that is synchronized between <span class="MyVariablesCompanyNameFull">Saleslogix</span> and the integration. </li>
+            <li value="2">If your implementation includes one or more integrations and you need to perform a large import or large batch updates that do not involve data that is synchronized between <span class="MyVariablesCompanyNameFull">Infor</span> and the integration. </li>
         </ul>
         <p>If your implementation does not include any integrations then the triggers can remain disabled. If your implementation includes any integrations, then you must enable the triggers once the import or batch update is complete. </p>
         <p>If you disabled database triggers prior to implementing any integrations and now plan to implement one or more integrations, you must do the following:</p>
         <ol>
             <li value="1">Enable the database triggers using the scripts listed for your database type.</li>
-            <li value="2">Run the SLXConversionUtility.exe.<br />For steps see the <i>Upgrading to Saleslogix v8.1.pdf</i>.</li>
-            <li value="3">Perform the steps required for implementing the integration. <br />These steps are specific to the integration. Please refer to the <span class="MyVariablesCompanyNameFull">Saleslogix</span> Web Client help or documentation provided with the integration.</li>
+            <li value="2">Run the SLXConversionUtility.exe.<br />For steps see the <i>Upgrading to <span class="MyVariablesProduct Name">Infor CRM</span> v<span class="MyVariablesVersion">8.2</span>.pdf</i>.</li>
+            <li value="3">Perform the steps required for implementing the integration. <br />These steps are specific to the integration. Please refer to the <span class="MyVariablesProduct Name">Infor CRM</span> Web Client help or documentation provided with the integration.</li>
         </ol>
         <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="97%">
             <col style="width: 8.248%;" />
@@ -40,10 +40,10 @@
                 <td style="width: 91.752%;vertical-align: TOP;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;">The ACCOUNT&#160;trigger is only required for X3. If your implementation does not include X3, this trigger can remain disabled. All other triggers are required for Outlook sync and Google Sync.</td>
             </tr>
         </table>
-        <div class="MCDropDown_0">
-            <div class="MCDropDownHead_0"><a class="MCDropDownHotSpot_0" href="javascript:void(0);" id="MCDropDownHotSpot_1195774030_0" onclick="FMCDropDown( this ); return false;">SQL<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCDropDownIcon" /></a>
+        <div class="MCDropDown">
+            <div class="MCDropDownHead_0"><a class="MCDropDownHotSpot_0" href="javascript:void(0);" id="MCDropDownHotSpot_2654334647_0" onclick="FMCDropDown( this ); return false;">SQL<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCDropDownIcon" /></a>
             </div>
-            <div class="MCDropDownBody" id="MCDropDownBody_1195774030_0" style="display: none;">
+            <div class="MCDropDownBody" id="MCDropDownBody_2654334647_0" style="display: none;">
                 <p class="Infinitive">To disable database triggers</p>
                 <ul>
                     <li value="1">Run the following scripts:
@@ -55,10 +55,10 @@
                 </ul>
             </div>
         </div>
-        <div class="MCDropDown_0">
-            <div class="MCDropDownHead_0"><a class="MCDropDownHotSpot_0" href="javascript:void(0);" id="MCDropDownHotSpot_1195774030_1" onclick="FMCDropDown( this ); return false;">Oracle<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCDropDownIcon" /></a>
+        <div class="MCDropDown">
+            <div class="MCDropDownHead_0"><a class="MCDropDownHotSpot_0" href="javascript:void(0);" id="MCDropDownHotSpot_2654334647_1" onclick="FMCDropDown( this ); return false;">Oracle<img style="border: none;margin-left: 5px;" src="../SkinSupport/DropDownClosed.gif" MadCap:altsrc="../SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCDropDownIcon" /></a>
             </div>
-            <div class="MCDropDownBody" id="MCDropDownBody_1195774030_1" style="display: none;">
+            <div class="MCDropDownBody" id="MCDropDownBody_2654334647_1" style="display: none;">
                 <p class="Infinitive">To disable database triggers</p>
                 <ul>
                     <li value="1">Run the following scripts:

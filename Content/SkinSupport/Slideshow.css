@@ -26,12 +26,7 @@
 ===================================*/
 
 .mc-wrapper .mc-viewport {
-	-moz-box-shadow: 0 0 5px #ccc;
-	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	border: solid #fff 5px;
-	left: -5px;
-	background: #fff;
+    box-sizing: content-box; 
 }
 
 .mc-wrapper .mc-pager,
@@ -51,6 +46,8 @@
 
 div.MCSlide{
     word-wrap: break-word;
+    visibility: hidden;
+    -webkit-margin-collapse: separate;
 }
 
 /* LOADER */
@@ -66,7 +63,7 @@ div.MCSlide{
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 2000;
+	z-index: auto;
 }
 
 /* PAGER */
@@ -137,7 +134,7 @@ div.MCSlide{
 	width: 32px;
 	height: 32px;
 	text-indent: -9999px;
-	z-index: 9999;
+	z-index: auto;
     cursor: pointer;
 }
 
@@ -210,7 +207,7 @@ div.MCSlide{
 	width: 100%;
 }
 
-.mc-wrapper .mc-caption span {
+.mc-wrapper .mc-caption div {
 	color: #fff;
 	font-family: Arial;
 	display: block;

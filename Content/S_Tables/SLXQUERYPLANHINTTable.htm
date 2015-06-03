@@ -4,10 +4,11 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" />
-        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
         <meta name="copyright" content="" /><title>SLXQUERYPLANHINT Table</title>
-        <link href="../Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/Infor.CSS" rel="stylesheet" type="text/css" />
         <script src="../SkinSupport/jquery.min.js" type="text/javascript">
         </script>
         <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
@@ -16,9 +17,9 @@
         </script>
     </head>
     <body>
-        <h1><a name="kanchor221"></a>SLXQUERYPLANHINT Table</h1>
+        <h1><a name="kanchor217"></a>SLXQUERYPLANHINT Table</h1>
         <p class="Infinitive">Added in Version 6.2.4</p>
-        <p>The SLXQUERYPLANHINT table stores information required for the SQL Optimization Toolkit. The query optimizer stores information about possible optimizations of corresponding ‘original’ queries. These are optimized queries or instructions for how to optimize original queries. This table contains information including, but not limited to, the SalesLogix query plan ID, hint type, data, database type and category.</p>
+        <p>The SLXQUERYPLANHINT table stores information required for the SQL Optimization Toolkit. The query optimizer stores information about possible optimizations of corresponding ‘original’ queries. These are optimized queries or instructions for how to optimize original queries. This table contains information including, but not limited to, the <span class="MyVariablesProduct Name">Infor CRM</span> query plan ID, hint type, data, database type and category.</p>
         <p class="subheading">Table Relationships</p>
         <p>The SLXQUERYPLANHINT table has a (Many) to (One) relationship with the <a href="SLXQUERYPLAN_Table.htm">SLXQUERYPLAN</a> table.</p>
         <table wrapperparagraphselector="P" style="margin-top: 14pt;" cellspacing="0" width="99.933%">
@@ -35,183 +36,186 @@
                 </td>
             </tr>
         </table>
-        <p><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="../Legend.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot">Legend</a></span>
-            <br />
-&#160;</p>
-        <table style="padding-left: 3.00pt;padding-top: 5.00pt;padding-right: 3.00pt;padding-bottom: 3.00pt;vertical-align: Center;left: 0px;top: 120px;height: 219px;margin-left: 0;margin-right: auto;" cellspacing="0">
-            <col />
-            <col />
-            <col />
-            <col />
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border: Solid 1px #000000;">
-                    <p class="Tabletop">Field</p>
-                </td>
-                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Tabletop">Datatype(Length)</p>
-                </td>
-                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Tabletop">Allow Nulls</p>
-                </td>
-                <td style="border-top: Solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Tabletop">Indexes</p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">SLXQUERYPLANHINTID <span style="font-weight: bold;">(PK)</span></p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">char(12)</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">NOT NULL</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">SLXQUERYPLANHINT_ID_PK <span style="font-weight: bold;">(CA)</span></p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table"><a href="SLXQUERYPLAN_Table.htm">SLXQUERYPLANID</a><span style="font-weight: bold;">(FK)</span>
-                    </p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">char(12)</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">NOT NULL</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">SLXQUERYPLANHINT_QPID <span style="font-weight: bold;">(IE)</span></p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">CREATEUSER <span style="font-weight: bold;">(FK)</span></p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">char(12)</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">NULLS</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">&#160;</p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">CREATEDATE</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">datetime(8)</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">NULLS</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">&#160;</p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">MODIFYUSER <span style="font-weight: bold;">(FK)</span></p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">char(12)</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">NULLS</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">&#160;</p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">MODIFYDATE</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">datetime(8)</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">NULLS</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">&#160;</p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">HINTTYPE</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">char(1)</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">NULLS</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">&#160;</p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">DATA</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">text(16)</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">NULLS</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">&#160;</p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">DATABASETYPE</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">int(4)</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">NOT NULL</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">SLXQUERYPLANHINT_DBTYPE <span style="font-weight: bold;">(IE)</span></p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">ENABLED</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">char(1)</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">NULLS</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">&#160;</p>
-                </td>
-            </tr>
-            <tr style="vertical-align: center;height: 16pt;">
-                <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">CATEGORY</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">varchar(32)</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">NULLS</p>
-                </td>
-                <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;">
-                    <p class="Table">&#160;</p>
-                </td>
-            </tr>
+        <p><span class="MCPopup"><a href="javascript:void(0);" MadCap:src="../Legend.htm" onclick="FMCPopup( event, this ); return false;" class="MCPopupSpot_0">Legend</a></span>
+            <br />&#160;</p>
+        <table style="padding-left: 3.00pt;padding-top: 5.00pt;padding-right: 3.00pt;padding-bottom: 3.00pt;vertical-align: Center;left: 0px;top: 120px;height: 219px;margin-left: 0;margin-right: auto;width: 90%;mc-table-style: url('../Resources/TableStyles/TableStyle.css');" cellspacing="0" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStyle-Head-Header1">
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1">
+                        <p class="Tabletop">Field</p>
+                    </th>
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1">
+                        <p class="Tabletop">Datatype(Length)</p>
+                    </th>
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1">
+                        <p class="Tabletop">Allow Nulls</p>
+                    </th>
+                    <th class="TableStyle-TableStyle-HeadD-Column1-Header1">
+                        <p class="Tabletop">Indexes</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="vertical-align: center;height: 16pt;" class="TableStyle-TableStyle-Body-Body1">
+                    <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">SLXQUERYPLANHINTID <span style="font-weight: bold;">(PK)</span></p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">char(12)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">NOT NULL</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p class="Table">SLXQUERYPLANHINT_ID_PK <span style="font-weight: bold;">(CA)</span></p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;height: 16pt;" class="TableStyle-TableStyle-Body-Body1">
+                    <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table"><a href="SLXQUERYPLAN_Table.htm">SLXQUERYPLANID</a><span style="font-weight: bold;">(FK)</span>
+                        </p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">char(12)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">NOT NULL</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p class="Table">SLXQUERYPLANHINT_QPID <span style="font-weight: bold;">(IE)</span></p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;height: 16pt;" class="TableStyle-TableStyle-Body-Body1">
+                    <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">CREATEUSER <span style="font-weight: bold;">(FK)</span></p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">char(12)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">NULLS</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p class="Table">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;height: 16pt;" class="TableStyle-TableStyle-Body-Body1">
+                    <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">CREATEDATE</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">datetime(8)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">NULLS</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p class="Table">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;height: 16pt;" class="TableStyle-TableStyle-Body-Body1">
+                    <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">MODIFYUSER <span style="font-weight: bold;">(FK)</span></p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">char(12)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">NULLS</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p class="Table">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;height: 16pt;" class="TableStyle-TableStyle-Body-Body1">
+                    <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">MODIFYDATE</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">datetime(8)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">NULLS</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p class="Table">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;height: 16pt;" class="TableStyle-TableStyle-Body-Body1">
+                    <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">HINTTYPE</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">char(1)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">NULLS</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p class="Table">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;height: 16pt;" class="TableStyle-TableStyle-Body-Body1">
+                    <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">DATA</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">text(16)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">NULLS</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p class="Table">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;height: 16pt;" class="TableStyle-TableStyle-Body-Body1">
+                    <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">DATABASETYPE</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">int(4)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">NOT NULL</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p class="Table">SLXQUERYPLANHINT_DBTYPE <span style="font-weight: bold;">(IE)</span></p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;height: 16pt;" class="TableStyle-TableStyle-Body-Body1">
+                    <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">ENABLED</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">char(1)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                        <p class="Table">NULLS</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                        <p class="Table">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="vertical-align: center;height: 16pt;" class="TableStyle-TableStyle-Body-Body1">
+                    <td style="border-left: solid 1px #000000;border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyB-Column1-Body1">
+                        <p class="Table">CATEGORY</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyB-Column1-Body1">
+                        <p class="Table">varchar(32)</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyB-Column1-Body1">
+                        <p class="Table">NULLS</p>
+                    </td>
+                    <td style="border-right: Solid 1px #000000;border-bottom: Solid 1px #000000;" class="TableStyle-TableStyle-BodyA-Column1-Body1">
+                        <p class="Table">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
         </table>
         <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
         </script>

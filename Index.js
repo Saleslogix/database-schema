@@ -1,7 +1,7 @@
 // {{MadCap}} //////////////////////////////////////////////////////////////////
 // Copyright: MadCap Software, Inc - www.madcapsoftware.com ////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-// <version>10.0.0.0</version>
+// <version>11.0.0.0</version>
 ////////////////////////////////////////////////////////////////////////////////
 
 //    Syntax:
@@ -541,10 +541,11 @@ function CMCHelpSystem( parentSubsystem, parentPath, xmlFile, tocPath, browseSeq
 	this.IsWebHelpPlus					= false;
 	this.ContentFolder					= null;
 	this.UseCustomTopicFileExtension	= false;
-	this.CustomTopicFileExtension		= null;
+	this.CustomTopicFileExtension = null;
+	this.PreventExternalUrls = false;
 	
 	this.GlossaryUrl					= null;
-	this.SearchFilterSetUrl = null;
+	this.SearchFilterSetUrls = null;
 
 	this.DisplayCommunitySearchResults = true;
 	this.CommunitySearchResultsCount = 3;
@@ -587,7 +588,7 @@ function CMCHelpSystem( parentSubsystem, parentPath, xmlFile, tocPath, browseSeq
 	        mSelf.LiveHelpOutputId = xmlDoc.documentElement.getAttribute("LiveHelpOutputId");
 	        mSelf.LiveHelpServer = xmlDoc.documentElement.getAttribute("LiveHelpServer");
 	        mSelf.LiveHelpEnabled = mSelf.LiveHelpOutputId != null;
-	        mSelf.IsWebHelpPlus = mSelf.TargetType == "WebHelpPlus" && document.location.protocol.StartsWith("http", false);
+            mSelf.IsWebHelpPlus = mSelf.TargetType == "WebHelpPlus" && document.location.protocol.StartsWith("http", false);
 
 	        var moveOutputContentToRoot = FMCGetAttributeBool(xmlDoc.documentElement, "MoveOutputContentToRoot", false);
 	        var makeFileLowerCase = FMCGetAttributeBool(xmlDoc.documentElement, "MakeFileLowerCase", false);
@@ -606,9 +607,10 @@ function CMCHelpSystem( parentSubsystem, parentPath, xmlFile, tocPath, browseSeq
 	        mSelf.ContentFolder = contentFolder;
 	        mSelf.UseCustomTopicFileExtension = FMCGetAttributeBool(xmlDoc.documentElement, "UseCustomTopicFileExtension", false);
 	        mSelf.CustomTopicFileExtension = FMCGetAttribute(xmlDoc.documentElement, "CustomTopicFileExtension");
+	        mSelf.PreventExternalUrls = FMCGetAttributeBool(xmlDoc.documentElement, "PreventExternalUrls", false);
 
 	        mSelf.GlossaryUrl = GetGlossaryUrl(xmlDoc);
-	        mSelf.SearchFilterSetUrl = GetDataFileUrl(xmlDoc, "SearchFilterSet");
+	        mSelf.SearchFilterSetUrls = GetSearchFilterSetUrls(xmlDoc, "SearchFilterSet");
 	        mSelf.HasBrowseSequences = xmlDoc.documentElement.getAttribute("BrowseSequence") != null;
 	        mSelf.HasToc = xmlDoc.documentElement.getAttribute("Toc") != null;
 
@@ -1301,6 +1303,42 @@ function CMCHelpSystem( parentSubsystem, parentPath, xmlFile, tocPath, browseSeq
 	    }
 
 	    return mPath + url;
+	}
+
+	function GetSearchFilterSetUrls(xmlDoc) {
+
+	    var urls = [];
+
+	    var url = xmlDoc.documentElement.getAttribute("SearchFilterSet");
+
+	    if (url == null) {
+	        return null;
+	    }
+
+	    urls.push(mPath + url);
+
+	    var subsystems = xmlDoc.documentElement.getElementsByTagName("Subsystems");
+	    if (subsystems != null) {
+
+	        for (var i = 0; i < subsystems.length; i++) {
+
+	            var childern = subsystems[i].childNodes;
+	            for (var j = 0; j < childern.length; j++) {
+
+	                var child = childern[j];
+
+	                if (child.nodeName == "Url") {
+	                    var source = child.getAttribute('Source');
+	                    if (source != null) {
+	                        source = source.substring(0, source.lastIndexOf("/") + 1);
+	                        urls.push(mPath + source + url);
+	                    }
+	                }
+	            }
+	        }
+	    }
+
+	    return urls;
 	}
     
 	function LoadFirstIndex(OnCompleteFunc)
@@ -3469,13 +3507,14 @@ String.prototype.TrimRight = function()
 //    Class CMCDictionary
 //
 
-function CMCDictionary()
+function CMCDictionary(ignoreCase)
 {
     // Public properties
     
-    this.mMap		= new Object();
-    this.mOverflows	= new Array();
-    this.mLength	= 0;
+    this.mMap		    = new Object();
+    this.mOverflows	    = new Array();
+    this.mLength        = 0;
+    this.mIgnoreCase    = ignoreCase == true;
 }
 
 CMCDictionary.prototype.GetLength	= function( key )
@@ -3512,6 +3551,9 @@ CMCDictionary.prototype.ForEach	= function( func )
 
 CMCDictionary.prototype.GetItem	= function( key )
 {
+    if (this.mIgnoreCase)
+        key = key.toLowerCase();
+
 	var item	= null;
 	
 	if ( typeof( this.mMap[key] ) == "function" )
@@ -3538,6 +3580,9 @@ CMCDictionary.prototype.GetItem	= function( key )
 
 CMCDictionary.prototype.GetItemOverflowIndex	= function( key )
 {
+    if (this.mIgnoreCase)
+        key = key.toLowerCase();
+
 	var overflows	= this.mOverflows;
 	
 	for ( var i = 0, length = overflows.length; i < length; i++ )
@@ -3553,6 +3598,9 @@ CMCDictionary.prototype.GetItemOverflowIndex	= function( key )
 
 CMCDictionary.prototype.Remove	= function( key )
 {
+    if (this.mIgnoreCase)
+        key = key.toLowerCase();
+
 	if ( typeof( this.mMap[key] ) == "function" )
 	{
 		var index	= this.GetItemOverflowIndex( key );
@@ -3577,6 +3625,9 @@ CMCDictionary.prototype.Remove	= function( key )
 
 CMCDictionary.prototype.Add	= function( key, value )
 {
+    if (this.mIgnoreCase)
+        key = key.toLowerCase();
+
 	if ( typeof( this.mMap[key] ) == "function" )
 	{
 		var item	= this.GetItem( key );
@@ -3598,6 +3649,9 @@ CMCDictionary.prototype.Add	= function( key, value )
 
 CMCDictionary.prototype.AddUnique	= function( key, value )
 {
+    if (this.mIgnoreCase)
+        key = key.toLowerCase();
+
 	var savedValue	= this.GetItem( key );
 	
 	if ( typeof( savedValue ) == "undefined" || !savedValue )
@@ -3631,7 +3685,9 @@ function CMCUrl( src )
 	this.NameWithExtension	= null;
 	this.Fragment			= null;
 	this.Query				= null;
-	this.IsAbsolute			= false;
+	this.IsAbsolute         = false;
+	this.QueryMap           = new CMCDictionary(true);
+	this.HashMap            = new CMCDictionary(true);
 
 	// Constructor
 
@@ -3693,13 +3749,55 @@ function CMCUrl( src )
 		mSelf.IsAbsolute = !String.IsNullOrEmpty( scheme );
 		mSelf.Fragment = fragment;
 		mSelf.Query = query;
+
+		var search = mSelf.Query;
+
+		if (!String.IsNullOrEmpty(search)) {
+		    search = search.substring(1);
+		    search = search.replace(/\+/g, " ");
+
+		    Parse(search, "&", mSelf.QueryMap);
+		}
+
+		var hash = mSelf.Fragment;
+
+		if (!String.IsNullOrEmpty(hash)) {
+		    hash = hash.substring(1);
+
+		    Parse(hash, "|", mSelf.HashMap);
+		}
+
+		function Parse(item, delimiter, map) {
+		    var split = item.split(delimiter);
+
+		    for (var i = 0, length = split.length; i < length; i++) {
+		        var part = split[i];
+		        var index = part.indexOf("=");
+		        var key = null;
+		        var value = null;
+
+		        if (index >= 0) {
+		            key = decodeURIComponent(part.substring(0, index));
+		            value = decodeURIComponent(part.substring(index + 1));
+		        }
+		        else {
+		            key = part;
+		        }
+
+		        map.Add(key, value);
+		    }
+		}
 	})();
 }
 
 // Public static properties
 
-CMCUrl.QueryMap	= new CMCDictionary();
-CMCUrl.HashMap	= new CMCDictionary();
+CMCUrl.QueryMap	= new CMCDictionary(true);
+CMCUrl.HashMap = new CMCDictionary(true);
+
+CMCUrl.StripInvalidCharacters = function (url) {
+    return url.replace(/(javascript:|data:|[<>])/gi, '');
+};
 
 (function()
 {

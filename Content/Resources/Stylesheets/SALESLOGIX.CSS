@@ -1,9 +1,7 @@
 /*<meta fileTags="Translation Status.Support files" />*/
 
 /* Use for product name on the title page; heading not in TOC */
-
 /* Use for the former product name on the title page; heading not in TOC */
-
 /* Use for the book title on title page; heading not in TOC */
 
 h1
@@ -37,6 +35,7 @@ p
 	font-family: inherit;
 	margin-top: 6pt;
 	margin-bottom: 0;
+	word-break: keep-all;
 }
 
 p.title-product1
@@ -347,7 +346,7 @@ h3
 	text-decoration: none;
 	color: inherit;
 	font-size: small;
-	border-bottom: none 0 1.0pt;
+	border-bottom: none 0px;
 }
 
 li.mc-H3
@@ -1139,7 +1138,7 @@ MadCap|xref.H1andpage
 
 MadCap|xref.H1
 {
-	mc-format: '{quote}{h1}{quote}';
+	mc-format: '{color blue}{quote}{h1}{quote}{/color}';
 }
 
 MadCap|xref.AppChapNumAndName
@@ -1154,14 +1153,14 @@ MadCap|xref.H2
 {
 	text-decoration: none;
 	font-size: inherit;
-	mc-format: '{quote}{h2}{quote}';
+	mc-format: '{color blue}{quote}{h2}{quote}{/color}';
 }
 
 MadCap|xref.H2andpage
 {
 	text-decoration: none;
 	font-size: inherit;
-	mc-format: '{quote}{h2}{quote} on page {page}';
+	mc-format: '{color blue}{quote}{h2}{quote}{/color}';
 }
 
 MadCap|xref.H3
@@ -1300,6 +1299,7 @@ html.PopupNoFooter
 		margin-bottom: 4pt;
 		padding-bottom: 0pt;
 		margin-top: 14pt;
+		color: #000000;
 	}
 
 	body
@@ -1419,7 +1419,7 @@ html.PopupNoFooter
 
 	MadCap|xref.H2andpage
 	{
-		mc-format: '{color black} See{/color} {color blue}{quote}{h2}{quote} {pageref}{/color}';
+		mc-format: '{color black} See {/color} {color blue}{quote}{h2}{quote} {pageref}{/color}';
 	}
 
 	MadCap|xref.H3andpage
@@ -1562,12 +1562,12 @@ html.PopupNoFooter
 	span.VersionDate
 	{
 		color: #a9a9a9;
+		font-size: 6pt;
 	}
 
 	p.title-document
 	{
 		font-size: inherit;
-		line-height: inherit;
 		margin-top: 3pt;
 		font-family: Foco;
 	}
@@ -1795,6 +1795,7 @@ html.PopupNoFooter
 	th.sub
 	{
 		text-align: left;
+		mc-hyphenate: never;
 	}
 
 	span.ChapterAutoNumber
@@ -1806,6 +1807,48 @@ html.PopupNoFooter
 	{
 		background-color: #00dddb;
 	}
+
+	td.grayedout
+	{
+		background-color: #c0c0c0;
+	}
+
+	td.wrap
+	{
+		mc-hyphenate: never;
+		word-break: keep-all;
+	}
+
+	th
+	{
+		word-break: keep-all;
+	}
+
+	span.wrap
+	{
+		word-break: keep-all;
+	}
+
+	div.TableTooBig
+	{
+		font-size: 8pt;
+	}
+
+	li.pagebreak
+	{
+		page-break-before: always;
+		page-break-inside: auto;
+	}
+
+	span.pagebreak
+	{
+		page-break-after: always;
+	}
+
+	MadCap|xref.H1andpageNoSee
+	{
+		mc-format: '{color blue}{quote}{h1}{quote} {pageref}{/color}';
+	}
 }
 
 @media non-print
@@ -1813,6 +1856,62 @@ html.PopupNoFooter
 	span.strike
 	{
 		text-decoration: line-through;
+	}
+
+	p.UpdatedOn
+	{
+		color: #009933;
+		font-size: x-small;
+	}
+
+	div.TableTooBig
+	{
+		overflow: auto;
+	}
+
+	h3
+	{
+		border-bottom: none 0px;
+	}
+
+	MadCap|xref.AppChapNumAndName
+	{
+		mc-format: '{quote}{paratext}{quote}';
+	}
+
+	MadCap|xref.ChapterNumberName
+	{
+		mc-format: '{color blue}{quote}{paratext}{quote}{/color}';
+	}
+
+	MadCap|xref.H1andpage
+	{
+		mc-format: '{quote}{h1}{quote}';
+	}
+
+	MadCap|xref.H2andpage
+	{
+		mc-format: '{color blue}{quote}{h2}{quote}{/color}';
+	}
+
+	MadCap|xref.H3andpage
+	{
+		mc-format: '{quote}{h3}{quote}';
+	}
+
+	h3.pagebreak
+	{
+		border-bottom: none 0px;
+	}
+
+	h1.Print
+	{
+		padding-left: auto;
+	}
+
+	h1.pagebreak
+	{
+		padding-left: auto;
 	}
 }
 
@@ -2017,5 +2116,26 @@ a.dropspot:active
 	font-style: normal;
 	color: #008080;
 	text-decoration: none;
+}
+
+MadCap|xref.ChapterNumberName
+{
+	mc-format: '{color blue}{paranumonly}, {quote}{paratext}{quote}{/color}';
+}
+
+MadCap|xref.ChapterNoNumber
+{
+	mc-format: '{color blue}{quote}{paratext}{quote}{/color}';
+}
+
+a.print
+{
+	color: #0000ff;
+	text-decoration: underline;
+}
+
+a.print:visited
+{
+	color: #9400d3;
 }
 
